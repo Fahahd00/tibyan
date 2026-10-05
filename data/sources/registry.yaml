@@ -1,0 +1,199 @@
+# Approved Source Whitelist — owned by the sharia-governance lead.
+#
+# status:
+#   approved → indexed and allowed in retrieval / answers
+#   pending  → may be fetched and indexed, but is EXCLUDED from retrieval until approved
+#   blocked  → never fetched, never retrieved
+#
+# priority: when retrieved fatwas of different sources disagree, the answer follows the lower number
+#   (1 = highest). Sources without a priority come last.
+#
+# A source is never considered trustworthy merely because it is well known.
+# Every change to this file needs governance review (see CONTRIBUTING.md).
+
+sources:
+  - slug: binbaz
+    name_ar: الموقع الرسمي لسماحة الشيخ عبدالعزيز بن باز رحمه الله
+    name_en: Official website of Sheikh Abdulaziz Ibn Baz
+    publisher_ar: سماحة الشيخ عبدالعزيز بن عبدالله بن باز رحمه الله
+    publisher_en: Sheikh Abdulaziz bin Abdullah Ibn Baz
+    description_ar: فتاوى الشيخ ابن باز المنشورة على موقعه الرسمي (مجموع الفتاوى، نور على الدرب، فتاوى الجامع الكبير، فتاوى الدروس).
+    description_en: Fatwas of Sheikh Ibn Baz published on his official website (Majmu' al-Fatawa, Nur 'ala al-Darb, al-Jami' al-Kabir, lessons).
+    base_url: https://binbaz.org.sa
+    domains: [binbaz.org.sa]
+    priority: 1
+    status: approved
+    approval_basis: >-
+      Named explicitly in the Tibyan project brief as a trusted source; official website of the scholar.
+      Awaiting formal sign-off (reviewed_by) from the team's sharia-governance lead.
+    approval_basis_ar: >-
+      نصّت وثيقة مشروع تِبْيان عليه صراحةً مصدرًا موثوقًا، وهو الموقع الرسمي لسماحة الشيخ.
+      وهو بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية في الفريق.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: binbaz_snapshot
+    corpus_dir: corpus/binbaz
+    license_note: >-
+      Verbatim snapshots with attribution and a link to the original page, used for a non-commercial
+      hackathon demo. Reuse terms must be confirmed with the site owner before any public launch.
+    license_note_ar: >-
+      نُسخ حرفية من الفتاوى منسوبة إلى مصدرها مع رابط الصفحة الأصلية، لعرضٍ تجريبي غير تجاري.
+      ويجب التحقق من شروط إعادة الاستخدام مع مالك الموقع قبل أي إطلاق عام.
+
+  - slug: binothaimeen
+    name_ar: الموقع الرسمي لفضيلة الشيخ محمد بن صالح العثيمين رحمه الله
+    name_en: Official website of Sheikh Muhammad ibn Salih al-Uthaymeen
+    publisher_ar: فضيلة الشيخ محمد بن صالح العثيمين رحمه الله
+    publisher_en: Sheikh Muhammad ibn Salih al-Uthaymeen
+    description_ar: فتاوى الشيخ ابن عثيمين (نور على الدرب، لقاءات الباب المفتوح، اللقاء الشهري وغيرها) من النسخة العامة لموقعه الرسمي.
+    description_en: Fatwas of Sheikh Ibn Uthaymeen (Nur 'ala al-Darb, Liqa' al-Bab al-Maftuh, al-Liqa' al-Shahri, …) from the public HTML edition of his official website.
+    base_url: https://binothaimeen.net
+    domains: [binothaimeen.net, old.binothaimeen.net]
+    priority: 2
+    status: approved
+    approval_basis: >-
+      Named explicitly in the Tibyan project brief as a trusted source; official website of the scholar.
+      Awaiting formal sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      نصّت وثيقة مشروع تِبْيان عليه صراحةً مصدرًا موثوقًا، وهو الموقع الرسمي لفضيلة الشيخ.
+      وهو بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: binothaimeen_snapshot
+    corpus_dir: corpus/binothaimeen
+    license_note: >-
+      Verbatim snapshots of public pages (old.binothaimeen.net, the site's HTML edition) with attribution and a
+      link to the original page, used for a non-commercial demo. The site's undocumented API is not used. Reuse
+      terms must be confirmed with the foundation before any public launch.
+    license_note_ar: >-
+      نُسخ حرفية من الصفحات العامة في النسخة النصية من الموقع، منسوبة إلى مصدرها مع رابط الصفحة الأصلية، لعرضٍ
+      تجريبي غير تجاري، دون استعمال واجهة الموقع البرمجية غير الموثّقة. ويجب التحقق من شروط إعادة الاستخدام مع
+      المؤسسة قبل أي إطلاق عام.
+
+  # Reference source (priority 3): authentic hadiths with their explanation — the evidence behind rulings.
+  - slug: hadeethenc
+    name_ar: موسوعة الأحاديث النبوية
+    name_en: Encyclopedia of Translated Prophetic Hadiths (HadeethEnc)
+    publisher_ar: موسوعة الأحاديث النبوية — دار الإسلام
+    publisher_en: HadeethEnc.com — IslamHouse
+    description_ar: أحاديث نبوية صحيحة مع درجتها وتخريجها وشرحٍ ميسّر وفوائد، من موسوعة الأحاديث النبوية ضمن موسوعات دار الإسلام (islamenc.com).
+    description_en: Authentic Prophetic hadiths with their grade, sources, a simplified explanation and benefits, from the hadith encyclopedia of the IslamHouse encyclopedias (islamenc.com).
+    base_url: https://hadeethenc.com/ar
+    domains: [hadeethenc.com]
+    priority: 3
+    status: approved
+    approval_basis: >-
+      Listed on s.islamenc.com (Islamic encyclopedias and services in world languages). Approved by the project owner
+      on 2026-10-05 as a reference source. Awaiting formal sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      من موسوعات دار الإسلام المدرجة في s.islamenc.com، اعتمدها صاحب المشروع مصدرًا مرجعيًا في ٥ أكتوبر ٢٠٢٦م.
+      وهي بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: hadeethenc_snapshot
+    corpus_dir: corpus/hadeethenc
+    license_note: >-
+      Fetched through the site's public API and stored verbatim with a link to each hadith's page. Reuse terms must be
+      confirmed with the publisher before any public launch.
+    license_note_ar: >-
+      جُلبت عبر الواجهة البرمجية العامة للموقع، وحُفظت بنصّها الحرفي مع رابط صفحة كل حديث. ويجب التحقق من شروط
+      إعادة الاستخدام مع الناشر قبل أي إطلاق عام.
+
+  # Fallback authorities (priority 4): consulted only when Ibn Baz and Ibn Uthaymeen have no fatwa that answers the
+  # question. Not pre-indexed — live search fetches their pages on demand and indexes them verbatim.
+  - slug: dar-alifta
+    name_ar: دار الإفتاء المصرية
+    name_en: Egyptian Dar al-Ifta
+    publisher_ar: دار الإفتاء المصرية
+    publisher_en: Dar al-Ifta al-Misriyyah (Egypt)
+    description_ar: الجهة الرسمية للإفتاء في جمهورية مصر العربية. مصدر احتياطي يُبحث فيه مباشرة عند عدم وجود فتوى لابن باز أو ابن عثيمين.
+    description_en: Egypt's official fatwa authority. Fallback source, searched live when Ibn Baz and Ibn Uthaymeen have no fatwa on the question.
+    base_url: https://www.dar-alifta.org/ar
+    domains: [dar-alifta.org, www.dar-alifta.org]
+    priority: 4
+    status: approved
+    approval_basis: >-
+      Official national fatwa authority. Approved by the project owner on 2026-10-04 as a fallback source.
+      Awaiting formal sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      جهة إفتاء رسمية في بلدها، اعتمدها صاحب المشروع مصدرًا احتياطيًا في ٤ أكتوبر ٢٠٢٦م.
+      وهي بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: live_search
+    license_note: >-
+      Pages are fetched on demand and stored verbatim with attribution and a link to the original. Reuse terms must
+      be confirmed before any public launch.
+    license_note_ar: >-
+      تُجلب الصفحات عند الحاجة وتُحفظ بنصّها الحرفي منسوبةً إلى مصدرها مع رابط الصفحة الأصلية.
+      ويجب التحقق من شروط إعادة الاستخدام قبل أي إطلاق عام.
+
+  - slug: aliftaa-jo
+    name_ar: دائرة الإفتاء العام — الأردن
+    name_en: General Iftaa' Department — Jordan
+    publisher_ar: دائرة الإفتاء العام في المملكة الأردنية الهاشمية
+    publisher_en: General Iftaa' Department, Hashemite Kingdom of Jordan
+    description_ar: الجهة الرسمية للإفتاء في الأردن. مصدر احتياطي يُبحث فيه مباشرة عند عدم وجود فتوى لابن باز أو ابن عثيمين.
+    description_en: Jordan's official fatwa authority. Fallback source, searched live when Ibn Baz and Ibn Uthaymeen have no fatwa on the question.
+    base_url: https://aliftaa.jo
+    domains: [aliftaa.jo, www.aliftaa.jo]
+    priority: 4
+    status: approved
+    approval_basis: >-
+      Official national fatwa authority. Approved by the project owner on 2026-10-04 as a fallback source.
+      Awaiting formal sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      جهة إفتاء رسمية في بلدها، اعتمدها صاحب المشروع مصدرًا احتياطيًا في ٤ أكتوبر ٢٠٢٦م.
+      وهي بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: live_search
+    license_note: >-
+      Pages are fetched on demand and stored verbatim with attribution and a link to the original. Reuse terms must
+      be confirmed before any public launch.
+    license_note_ar: >-
+      تُجلب الصفحات عند الحاجة وتُحفظ بنصّها الحرفي منسوبةً إلى مصدرها مع رابط الصفحة الأصلية.
+      ويجب التحقق من شروط إعادة الاستخدام قبل أي إطلاق عام.
+
+  - slug: eftaa-kw
+    name_ar: إدارة الإفتاء — وزارة الأوقاف والشؤون الإسلامية بالكويت
+    name_en: Fatwa Department — Ministry of Awqaf and Islamic Affairs, Kuwait
+    publisher_ar: هيئة الفتوى بوزارة الأوقاف والشؤون الإسلامية في دولة الكويت
+    publisher_en: Fatwa Authority, Ministry of Awqaf and Islamic Affairs, Kuwait
+    description_ar: الجهة الرسمية للإفتاء في الكويت. مصدر احتياطي يُبحث فيه مباشرة عند عدم وجود فتوى لابن باز أو ابن عثيمين.
+    description_en: Kuwait's official fatwa authority. Fallback source, searched live when Ibn Baz and Ibn Uthaymeen have no fatwa on the question.
+    base_url: https://eftaa.awqaf.gov.kw/ar
+    domains: [eftaa.awqaf.gov.kw]
+    priority: 4
+    status: approved
+    approval_basis: >-
+      Official national fatwa authority. Approved by the project owner on 2026-10-04 as a fallback source.
+      Awaiting formal sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      جهة إفتاء رسمية في بلدها، اعتمدها صاحب المشروع مصدرًا احتياطيًا في ٤ أكتوبر ٢٠٢٦م.
+      وهي بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: live_search
+    license_note: >-
+      Pages are fetched on demand and stored verbatim with attribution and a link to the original. Reuse terms must
+      be confirmed before any public launch.
+    license_note_ar: >-
+      تُجلب الصفحات عند الحاجة وتُحفظ بنصّها الحرفي منسوبةً إلى مصدرها مع رابط الصفحة الأصلية.
+      ويجب التحقق من شروط إعادة الاستخدام قبل أي إطلاق عام.
+
+  - slug: alifta
+    name_ar: الرئاسة العامة للبحوث العلمية والإفتاء
+    name_en: General Presidency of Scholarly Research and Ifta
+    publisher_ar: الرئاسة العامة للبحوث العلمية والإفتاء — المملكة العربية السعودية
+    publisher_en: General Presidency of Scholarly Research and Ifta — Saudi Arabia
+    description_ar: الجهة الرسمية للإفتاء. قيد المراجعة التقنية لتعذر الوصول إلى موقعها أثناء الإعداد.
+    description_en: The official fatwa authority. Pending technical review because its website was unreachable during setup.
+    base_url: https://www.alifta.gov.sa
+    domains: [alifta.gov.sa, www.alifta.gov.sa]
+    status: pending
+    approval_basis: null
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: none
+    license_note: null

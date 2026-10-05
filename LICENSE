@@ -1,0 +1,13 @@
+Copyright (c) 2026 Team RAIN — تِبْيان | Tibyan. All rights reserved.
+
+The source code in this repository is published for viewing and evaluation, including by the judges of the
+BATHEL 2026 hackathon (Islamic AI Challenge). No license is granted to copy, modify, distribute, sublicense or use
+it, in whole or in part, without prior written permission from Team RAIN.
+
+This notice does not limit the licenses granted to the organizer of the challenge under its Terms and Conditions,
+namely the limited license to receive, preserve, copy, operate, examine and evaluate the submission and, for a
+selected or winning project, the expanded non-profit license, each within the scope those terms define.
+
+Third-party components (libraries, fonts, models, services) keep their own licenses; see docs/COMPONENTS.md.
+Fatwa and hadith texts belong to their publishers. They are not distributed in this repository (only the list in
+data/corpus/manifest.jsonl is), and they are not covered by this notice.

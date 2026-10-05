@@ -1,0 +1,4362 @@
+[
+ {
+  "qid": "4395-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل تسقط مشروعية الراتبة \"السنن الرواتب\" في السفر؟ وما الدليل على ذلك؟ أفيدونا أفادكم الله.",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1550,
+  "top_dense": 0.9142,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4395-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل تبقى السنن الرواتب مشروعة في حال السفر؟",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 639,
+  "top_dense": 0.9011,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4395-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "إذا سافرت أصلي السنن اللي قبل وبعد الفروض ولا أتركها؟",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 324,
+  "top_dense": 0.8258,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4395-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الرواتب في السفر؟",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4395"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1371,
+  "top_dense": 0.8488,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.83"
+ },
+ {
+  "qid": "4395-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "المسافر حين يقصر الفريضة، ماذا يفعل بالنوافل المرتبطة بها؟",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 309,
+  "top_dense": 0.8708,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4395-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "هل اصلي السنن الرواتب وانا مسافر",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 798,
+  "top_dense": 0.8472,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4395-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Should a traveller still pray the regular sunnah prayers?",
+  "accept": [
+   "4395"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5082"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 4678,
+  "top_dense": 0.8288,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.84"
+ },
+ {
+  "qid": "2768-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "إذا سافرت مسافة 80 كم، وعدت من نهاري، هل يجوز لي القصر، أم لا؟",
+  "accept": [
+   "2768"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 589,
+  "top_dense": 0.9108,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2768-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "من سافر ثمانين كيلومترًا ورجع في اليوم نفسه، هل له أن يقصر؟",
+  "accept": [
+   "2768"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 266,
+  "top_dense": 0.8681,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2768-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "رحت مشوار 80 كيلو ورجعت نفس اليوم، أقصر الصلاة ولا لا؟",
+  "accept": [
+   "2768"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 9,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "2768-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "قصر الصلاة لسفر يوم واحد؟",
+  "accept": [
+   "2768"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2848,
+  "top_dense": 0.8852,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2768-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "إذا كانت الرحلة ذهابًا وإيابًا في نهار واحد لمسافة ثمانين كيلًا، فهل تُعد سفرًا تقصر فيه الصلاة؟",
+  "accept": [
+   "2768"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 398,
+  "top_dense": 0.9054,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5017-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "ما حكم صلاة المقيم خلف المسافر أو العكس؟ وهل يحق للمسافر القصر حينئذ سواء كان إمامًا أم مأمومًا؟",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1189,
+  "top_dense": 0.9497,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5017-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما حكم أن يصلي المقيم خلف إمام مسافر، والمسافر خلف إمام مقيم؟",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5013"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 5177,
+  "top_dense": 0.9124,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.85"
+ },
+ {
+  "qid": "5017-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "إذا صليت وأنا مسافر ورا إمام مقيم، أكمل أربع ولا أقصر؟",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 426,
+  "top_dense": 0.8994,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5017-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "المسافر خلف المقيم؟",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5017"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3992,
+  "top_dense": 0.8964,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.87"
+ },
+ {
+  "qid": "5017-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "اختلف حال الإمام والمأموم سفرًا وإقامة، فكيف تكون صلاة كل منهما؟",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 334,
+  "top_dense": 0.8775,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5017-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "If a traveller prays behind a resident imam, does he shorten or complete the prayer?",
+  "accept": [
+   "5017",
+   "1419",
+   "5013",
+   "5015"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5015"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 5556,
+  "top_dense": 0.8384,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.83"
+ },
+ {
+  "qid": "5025-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل صحيح أن المسافر يقصر الصلاة مهما طالت مدة السفر ولو بلغت سنينًا؟ أم أن هناك زمنًا محددًا ينتهي فيه القصر؟ وما حكم السفر فيمن يسافر للدراسة أو العمل خارج بلده، هل الصحيح أنه يقصر حتى يرجع من الدراسة أو العمل؟",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 811,
+  "top_dense": 0.9315,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5025-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل للمسافر أن يقصر مهما طالت مدة إقامته، أم أن للقصر حدًا زمنيًا؟",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 361,
+  "top_dense": 0.8784,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5025-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أنا مسافر وبجلس هناك كم يوم، لين متى أقدر أقصر الصلاة؟",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 271,
+  "top_dense": 0.8665,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5025-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "مدة القصر للمسافر؟",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5025"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 5118,
+  "top_dense": 0.8971,
+  "extractive_note": "primary=E3 overlap=1.00 cos=0.79"
+ },
+ {
+  "qid": "5025-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "إقامة المسافر في بلد غير بلده، متى تنتهي معها رخصة القصر؟",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3136"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 6744,
+  "top_dense": 0.8405,
+  "extractive_note": "primary=E4 overlap=0.71 cos=0.83"
+ },
+ {
+  "qid": "5025-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "كم يوم يقصر المسافر الصلاه",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2461"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3753,
+  "top_dense": 0.8971,
+  "extractive_note": "primary=E1 overlap=0.75 cos=0.86"
+ },
+ {
+  "qid": "5025-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "How long can a traveller keep shortening the prayer?",
+  "accept": [
+   "5025",
+   "2461",
+   "3338",
+   "1678",
+   "5023"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5043"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 5997,
+  "top_dense": 0.8275,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.83"
+ },
+ {
+  "qid": "3785-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "الأخ: ع. م.م - من دولة قطر يقول في سؤاله: قرأت رأيا لبعض العلماء: أن أكل لحم الإبل ينقض الوضوء وقرأت رأيًا آخر: أنه لا ينقض الوضوء، فأي الرأيين أصح؟ أفتونا مأجورين.",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1565,
+  "top_dense": 0.8894,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3785-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل ينتقض الوضوء بأكل لحم الإبل؟",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3770"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3502,
+  "top_dense": 0.936,
+  "extractive_note": "primary=E2 overlap=0.80 cos=0.85"
+ },
+ {
+  "qid": "3785-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أكلت لحم جمل وأنا متوضي، لازم أعيد الوضوء؟",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 536,
+  "top_dense": 0.8754,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3785-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "لحم الإبل والوضوء؟",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3785"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 4797,
+  "top_dense": 0.9107,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "3785-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من تناول من لحوم الإبل وهو على طهارة، هل تبقى طهارته؟",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 436,
+  "top_dense": 0.8803,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3785-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "اكل لحم الابل ينقض الوضوء",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3785"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 6949,
+  "top_dense": 0.901,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.88"
+ },
+ {
+  "qid": "3785-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Does eating camel meat break wudu?",
+  "accept": [
+   "3785"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3770"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 5126,
+  "top_dense": 0.8015,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.80"
+ },
+ {
+  "qid": "1973-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "من توضأ، ومسح على الجورب، ثم بعد انتهائه من الوضوء بفترة خلع الجورب، فهل يبطل الوضوء بخلعه للجورب، أم لا؟",
+  "accept": [
+   "1973"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1738,
+  "top_dense": 0.9081,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1973-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "من مسح على جوربيه ثم خلعهما بعد الوضوء، هل يبطل وضوؤه؟",
+  "accept": [
+   "1973"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1973"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1295,
+  "top_dense": 0.8999,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.90"
+ },
+ {
+  "qid": "1973-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "مسحت على الشراب وبعدين فصخته، وضوئي راح ولا لا؟",
+  "accept": [
+   "1973"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 384,
+  "top_dense": 0.8134,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1973-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "خلع الجورب بعد المسح؟",
+  "accept": [
+   "1973"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1973"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1205,
+  "top_dense": 0.8669,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "1973-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "بعد المسح على الخفين ونزعهما، هل يلزم تجديد الطهارة؟",
+  "accept": [
+   "1973"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 494,
+  "top_dense": 0.8552,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1449-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "ما الحكم في المرأة إذا لمست زوجها، هل يجب عليه الوضوء، أم لا؟",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2075,
+  "top_dense": 0.8949,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1449-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجب الوضوء على الرجل إذا لمسته زوجته؟",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1786,
+  "top_dense": 0.8935,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1449-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "زوجتي لمست يدي وأنا متوضي، ينتقض وضوئي؟",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 702,
+  "top_dense": 0.8545,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1449-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "لمس الزوجة والوضوء؟",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1449"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 7821,
+  "top_dense": 0.8769,
+  "extractive_note": "primary=E3 overlap=1.00 cos=0.88"
+ },
+ {
+  "qid": "1449-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "مجرد ملامسة الزوجين أحدهما للآخر، هل لها أثر على الطهارة؟",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 415,
+  "top_dense": 0.8432,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1449-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Does touching one's wife invalidate wudu?",
+  "accept": [
+   "1449",
+   "3747",
+   "3749"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3749"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 13928,
+  "top_dense": 0.8166,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.79"
+ },
+ {
+  "qid": "3784-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "رد السلام أثناء الوضوء، هل ينقض الوضوء؟ وهل هو مكروه؟ أفيدوني أفادكم الله.",
+  "accept": [
+   "3784"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3500,
+  "top_dense": 0.9327,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3784-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يبطل الوضوء إذا رد المتوضئ السلام أثناء وضوئه؟",
+  "accept": [
+   "3784"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 482,
+  "top_dense": 0.9191,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3784-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "واحد سلم علي وأنا أتوضأ ورديت عليه، فيه شي؟",
+  "accept": [
+   "3784"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 484,
+  "top_dense": 0.81,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3784-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "رد السلام وقت الوضوء؟",
+  "accept": [
+   "3784"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3784"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 12716,
+  "top_dense": 0.9025,
+  "extractive_note": "primary=E1 overlap=0.75 cos=0.88"
+ },
+ {
+  "qid": "3784-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الكلام في أثناء الوضوء كرد التحية، هل يؤثر عليه أو يكره؟",
+  "accept": [
+   "3784"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 577,
+  "top_dense": 0.8683,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1807-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "رجل عنده سلس في البول يقول: إذا دخل الوقت وتوضأ فبعد الوضوء يخرج ما لا يزيد نقطتين من البول، وهو متحرج من ذلك؟",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2110,
+  "top_dense": 0.9075,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1807-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "كيف يتوضأ ويصلي من به سلس بول تخرج منه قطرات بعد الوضوء؟",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3986,
+  "top_dense": 0.8464,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1807-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "عندي سلس بول، تنزل نقطتين بعد ما أتوضأ، وش أسوي بصلاتي؟",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 641,
+  "top_dense": 0.8474,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1807-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "سلس البول والوضوء؟",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3743"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 7183,
+  "top_dense": 0.8863,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.84"
+ },
+ {
+  "qid": "1807-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من لا يستمسك بوله ويخرج منه شيء يسير بعد طهارته، ما الواجب عليه للصلاة؟",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3895,
+  "top_dense": 0.8565,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1807-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "عندي سلس بول كيف اتوضا",
+  "accept": [
+   "1807"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2822"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 6875,
+  "top_dense": 0.8291,
+  "extractive_note": "primary=E3 overlap=0.75 cos=0.84"
+ },
+ {
+  "qid": "3611-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "السائلة: ص. س -من الجوف- تقول في سؤالها: هل في استعمال المرأة للمناكير التي تُطلى بها الأظافر إثم؟ وماذا تعمل عند الوضوء؟",
+  "accept": [
+   "3611"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1975,
+  "top_dense": 0.8921,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3611-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجب على المرأة إزالة طلاء الأظافر عند الوضوء؟",
+  "accept": [
+   "3611"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 780,
+  "top_dense": 0.8972,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3611-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "حاطة مناكير، يصح وضوئي ولا لازم أشيله؟",
+  "accept": [
+   "3611"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 682,
+  "top_dense": 0.8429,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3611-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "المناكير والوضوء؟",
+  "accept": [
+   "3611"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1362,
+  "top_dense": 0.8723,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3611-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الطلاء الذي يغطي الأظافر ويمنع وصول الماء، ما حكمه في الطهارة؟",
+  "accept": [
+   "3611"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 724,
+  "top_dense": 0.8525,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3650-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل يشترط لصاحب اللحية الكثيفة أن يصل الماء إلى منابت الشعر؟",
+  "accept": [
+   "3650"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1428,
+  "top_dense": 0.9363,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3650-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يلزم إيصال الماء إلى منابت شعر اللحية الكثيفة في الوضوء؟",
+  "accept": [
+   "3650"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 669,
+  "top_dense": 0.9149,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3650-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "لحيتي كثيفة، لازم أدخل الموية لين جلد الوجه؟",
+  "accept": [
+   "3650"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 767,
+  "top_dense": 0.8414,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3650-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "غسل اللحية الكثيفة؟",
+  "accept": [
+   "3650"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3832"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 4384,
+  "top_dense": 0.8747,
+  "extractive_note": "primary=E2 overlap=0.67 cos=0.82"
+ },
+ {
+  "qid": "3650-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "اللحية الكثة عند غسل الوجه، هل يكفي إمرار الماء على ظاهرها؟",
+  "accept": [
+   "3650"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 752,
+  "top_dense": 0.8782,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3773-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "من امرأة تقول فيه: عندما أصلي صلاة الضحى وانتظر صلاة الظهر فيغالبني نعاس، فهل ينتقض وضوئي به أم لا؟",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1515,
+  "top_dense": 0.8782,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3773-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل ينتقض الوضوء بالنعاس اليسير؟",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3773"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 902,
+  "top_dense": 0.9009,
+  "extractive_note": "primary=E1 overlap=0.75 cos=0.88"
+ },
+ {
+  "qid": "3773-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "جاني نعاس وأنا أنتظر الصلاة، أعيد الوضوء؟",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 855,
+  "top_dense": 0.847,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3773-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "النعاس ينقض الوضوء؟",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3772"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 4506,
+  "top_dense": 0.9113,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.87"
+ },
+ {
+  "qid": "3773-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الغفوة الخفيفة أثناء الجلوس في المسجد، هل تبطل الطهارة؟",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 228,
+  "top_dense": 0.8494,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3773-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Does dozing off while waiting for prayer break wudu?",
+  "accept": [
+   "3773",
+   "3772",
+   "3775"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4923"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1491,
+  "top_dense": 0.8111,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.82"
+ },
+ {
+  "qid": "1386-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "رجل يدخر مبلغًا من المال بلغ النصاب الشرعي للزكاة، لكنه غير متزوج، أعزب، فيريد الزواج بهذا المبلغ، ومرت عليه سنتان؛ فهل تجب الزكاة؟",
+  "accept": [
+   "1386"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1351,
+  "top_dense": 0.9153,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1386-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل تجب الزكاة في مال ادخره صاحبه للزواج وحال عليه الحول؟",
+  "accept": [
+   "1386"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 346,
+  "top_dense": 0.9021,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1386-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "مجمع فلوس عشان أتزوج ومر عليها سنة، تجيها زكاة؟",
+  "accept": [
+   "1386"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 323,
+  "top_dense": 0.8388,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1386-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "زكاة مال الزواج؟",
+  "accept": [
+   "1386"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2257"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3032,
+  "top_dense": 0.886,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "1386-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "المبلغ المحفوظ لتكاليف الزواج إذا بلغ النصاب، هل يُزكى؟",
+  "accept": [
+   "1386"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 980,
+  "top_dense": 0.861,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1779-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "رجل استقرض مني مالًا، وبعد مدة من الزمن رأيته يستحق الزكاة، فهل لي خصم المال الذي عليه من الزكاة؟",
+  "accept": [
+   "1779"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 12,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "1779-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز إسقاط الدين عن الفقير واحتسابه من الزكاة؟",
+  "accept": [
+   "1779"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1779"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1882,
+  "top_dense": 0.8969,
+  "extractive_note": "primary=E1 overlap=0.80 cos=0.86"
+ },
+ {
+  "qid": "1779-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "واحد مستلف مني فلوس وصار فقير، أحسبها عليه من الزكاة؟",
+  "accept": [
+   "1779"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 15418,
+  "top_dense": 0.87,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1779-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "إسقاط الدين من الزكاة؟",
+  "accept": [
+   "1779"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1779"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2506,
+  "top_dense": 0.8699,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.83"
+ },
+ {
+  "qid": "1779-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "لي مال عند معسر يستحق الزكاة، فهل أبرئه منه وأعده زكاة مالي؟",
+  "accept": [
+   "1779"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 11,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "1278-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "ما رأي الشارع في قيامي بصرف جزء من زكاة مالي في تشييد مسجد منذ بعض سنوات، دون علمي بالحكم، وعرفت هذه السنة أن الزكاة لا تجوز على تشييد مسجد، فما الحكم فيما فعلت قبل ذلك؟ هل هو جائز؟ وماذا أفعل؟",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 10,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "1278-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز صرف الزكاة في بناء المساجد؟",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1708"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2940,
+  "top_dense": 0.905,
+  "extractive_note": "primary=E3 overlap=0.75 cos=0.88"
+ },
+ {
+  "qid": "1278-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أقدر أعطي زكاتي لبناء مسجد؟",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 162,
+  "top_dense": 0.892,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1278-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الزكاة لبناء المساجد؟",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1708"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2987,
+  "top_dense": 0.8953,
+  "extractive_note": "primary=E2 overlap=0.67 cos=0.89"
+ },
+ {
+  "qid": "1278-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "تعمير بيوت الله، هل هو من مصارف الزكاة الشرعية؟",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 177,
+  "top_dense": 0.8594,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1278-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Can zakat money be used to build a mosque?",
+  "accept": [
+   "1278"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "982"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2554,
+  "top_dense": 0.8398,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.81"
+ },
+ {
+  "qid": "3068-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل زكاة مال القرض الحسن على المقرض أم على المقترض؟",
+  "accept": [
+   "3068"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 13,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "3068-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "على من تجب زكاة القرض الحسن، على المقرض أم المقترض؟",
+  "accept": [
+   "3068"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 10,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "3068-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "سلفت واحد فلوس، الزكاة علي ولا عليه؟",
+  "accept": [
+   "3068"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 9,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "3068-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "زكاة القرض؟",
+  "accept": [
+   "3068"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3068"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2577,
+  "top_dense": 0.8961,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.87"
+ },
+ {
+  "qid": "3068-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "المال الذي أعطيته دينًا لغيري، من يتحمل زكاته؟",
+  "accept": [
+   "3068"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 209,
+  "top_dense": 0.8399,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6502-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "توفي رجل وخلف أموالًا وأيتامًا، فهل في هذه الأموال زكاة؟ وإن كان كذلك فمن يخرجها؟",
+  "accept": [
+   "6502"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3217,
+  "top_dense": 0.8939,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6502-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل تجب الزكاة في أموال الأيتام، ومن الذي يخرجها؟",
+  "accept": [
+   "6502"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6502"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 4407,
+  "top_dense": 0.9073,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.89"
+ },
+ {
+  "qid": "6502-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أبوهم توفى وترك لهم فلوس، عليها زكاة ومين يطلعها؟",
+  "accept": [
+   "6502"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 420,
+  "top_dense": 0.8658,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6502-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "زكاة مال اليتيم؟",
+  "accept": [
+   "6502"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6502"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 5205,
+  "top_dense": 0.9002,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.88"
+ },
+ {
+  "qid": "6502-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الصغار الذين ورثوا مالًا بعد وفاة أبيهم، هل يلزم في مالهم زكاة؟",
+  "accept": [
+   "6502"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 209,
+  "top_dense": 0.8901,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "7215-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "بالنسبة للمصابين بمرض السكر ماذا يقول الشيخ عبد العزيز لمثل هؤلاء؟",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2007,
+  "top_dense": 0.8454,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "7215-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما حكم صيام مريض السكري في رمضان؟",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7203"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 7456,
+  "top_dense": 0.8638,
+  "extractive_note": "primary=E2 overlap=0.75 cos=0.86"
+ },
+ {
+  "qid": "7215-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "عندي سكر، أصوم رمضان ولا يجوز لي أفطر؟",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 12,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "7215-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "صيام مريض السكر؟",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6047"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 6640,
+  "top_dense": 0.8576,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.85"
+ },
+ {
+  "qid": "7215-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "المصاب بداء السكري إذا شق عليه الصوم، ما الذي يلزمه؟",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 203,
+  "top_dense": 0.8635,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "7215-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Does a diabetic have to fast in Ramadan?",
+  "accept": [
+   "7215"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7215"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 8623,
+  "top_dense": 0.8407,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.80"
+ },
+ {
+  "qid": "8065-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "سماحة الشيخ: السائل (ع. ب. أ) يقول: لديه فشل كلوي ويداوم على غسيل الكلية لمدة ثلاثة أيام في الأسبوع، فهل يجوز له الصيام في هذه الأيام عند دخول رمضان؟",
+  "accept": [
+   "8065"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1147,
+  "top_dense": 0.914,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "8065-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز لمن يجري غسيل الكلى أن يفطر في رمضان؟",
+  "accept": [
+   "8065"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 175,
+  "top_dense": 0.8943,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "8065-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أبوي يسوي غسيل كلى ثلاث مرات بالأسبوع، يصوم ولا يفطر؟",
+  "accept": [
+   "8065"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 228,
+  "top_dense": 0.8536,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "8065-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الغسيل الكلوي والصيام؟",
+  "accept": [
+   "8065"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "8065"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1037,
+  "top_dense": 0.882,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.85"
+ },
+ {
+  "qid": "8065-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "مريض الفشل الكلوي في أيام جلسات الغسيل، ما حكم صيامه؟",
+  "accept": [
+   "8065"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1609,
+  "top_dense": 0.9067,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6892-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "أخ لنا من سوريا بعث بمجموعة من الأسئلة ولم يذكر اسمه بل وقع في نهاية الرسالة، أسئلته تدور حول ما يلي:\n\nأولاً: يقول: هل يجوز لشخص الإفطار في رمضان من أجل الدراسة لتقديم الفحص إن وجد في الصيام مشقة؟",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 15992,
+  "top_dense": 0.8813,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6892-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز للطالب الفطر في رمضان من أجل الاختبارات؟",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "10657"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2350,
+  "top_dense": 0.874,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.88"
+ },
+ {
+  "qid": "6892-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "عندي اختبارات في رمضان، أفطر عشان أذاكر؟",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 18,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "6892-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الفطر للامتحانات؟",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1461,
+  "top_dense": 0.8435,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6892-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "ضغط الدراسة وقت الامتحانات في شهر الصوم، هل يبيح الإفطار؟",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 183,
+  "top_dense": 0.8704,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "6892-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "افطر عشان الاختبارات في رمضان",
+  "accept": [
+   "6892",
+   "10657"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 10,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "2773-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل إذا كان الإنسان مريضًا مرضًا زمنًا طويلًا، ولا يقدر على الصيام في شهر رمضان، ما الحكم عليه؟",
+  "accept": [
+   "2773"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2148,
+  "top_dense": 0.9061,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2773-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما الواجب على من مرض مرضًا مزمنًا لا يرجى شفاؤه ولا يستطيع الصيام؟",
+  "accept": [
+   "2773"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 484,
+  "top_dense": 0.8722,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2773-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "مرضي مزمن وما أقدر أصوم أبد، وش علي؟",
+  "accept": [
+   "2773"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 220,
+  "top_dense": 0.8687,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2773-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "المريض الذي لا يرجى شفاؤه؟",
+  "accept": [
+   "2773"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6047"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 6493,
+  "top_dense": 0.8365,
+  "extractive_note": "primary=E2 overlap=0.67 cos=0.84"
+ },
+ {
+  "qid": "2773-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من عجز عن الصوم عجزًا دائمًا بسبب علة لا تزول، ما البديل عن صيامه؟",
+  "accept": [
+   "2773"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 220,
+  "top_dense": 0.8511,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3081-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "شخص كان صائمًا في رمضان المبارك، وأراد السفر، ولكنه أفطر في منزله قبل أن يغادر المدينة التي يقيم فيها، فما الحكم في ذلك؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 391,
+  "top_dense": 0.9247,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3081-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز للمسافر أن يفطر في بيته قبل أن يغادر بلده؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 290,
+  "top_dense": 0.8807,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3081-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "ناوي أسافر بالنهار في رمضان، أفطر من البيت قبل ما أطلع؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 196,
+  "top_dense": 0.8712,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3081-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الفطر قبل الخروج للسفر؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7209"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 4411,
+  "top_dense": 0.8062,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.80"
+ },
+ {
+  "qid": "3081-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من عزم على السفر في نهار رمضان، متى يبدأ له الإفطار؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4462"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2341,
+  "top_dense": 0.8716,
+  "extractive_note": "primary=E2 overlap=0.67 cos=0.85"
+ },
+ {
+  "qid": "1241-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل الحجامة تفسد الصوم، أم هي منسوخة؟",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 882,
+  "top_dense": 0.8998,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1241-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل الحجامة تفطر الصائم؟",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11755"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3064,
+  "top_dense": 0.8688,
+  "extractive_note": "primary=E2 overlap=0.67 cos=0.84"
+ },
+ {
+  "qid": "1241-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أبي أتحجم وأنا صايم، يخرب صيامي؟",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 229,
+  "top_dense": 0.8307,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1241-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الحجامة للصائم؟",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 603,
+  "top_dense": 0.8755,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1241-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "إخراج الدم بالحجامة في نهار الصوم، هل يفسد الصيام أم هو منسوخ؟",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 327,
+  "top_dense": 0.872,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1241-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "الحجامه تفطر الصايم",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11755"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2858,
+  "top_dense": 0.8412,
+  "extractive_note": "primary=E3 overlap=0.67 cos=0.83"
+ },
+ {
+  "qid": "1241-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Does cupping (hijama) break the fast?",
+  "accept": [
+   "1241"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3831"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 5596,
+  "top_dense": 0.7942,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.77"
+ },
+ {
+  "qid": "11843-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل يجوز استعمال الطيب كدهن العود والكولونيا والبخور في نهار رمضان؟",
+  "accept": [
+   "11843",
+   "11839"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 300,
+  "top_dense": 0.9553,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11843-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز للصائم استعمال الطيب والبخور في نهار رمضان؟",
+  "accept": [
+   "11843",
+   "11839"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 508,
+  "top_dense": 0.9245,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11843-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أتبخر وأحط عطر وأنا صايم عادي؟",
+  "accept": [
+   "11843",
+   "11839"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 161,
+  "top_dense": 0.8402,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11843-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "البخور للصائم؟",
+  "accept": [
+   "11843",
+   "11839"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 401,
+  "top_dense": 0.8535,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11843-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "التطيب بدهن العود والكولونيا خلال الصيام، هل فيه بأس؟",
+  "accept": [
+   "11843",
+   "11839"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 222,
+  "top_dense": 0.8839,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11806-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "ما حكم استعمال معجون الأسنان، وقطرة الأذن، وقطرة الأنف، وقطرة العين للصائم، وإذا وجد الصائم طعمها في حلقه فماذا يصنع؟",
+  "accept": [
+   "11806"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1354,
+  "top_dense": 0.9542,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11806-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما حكم استعمال معجون الأسنان وقطرة العين والأذن للصائم؟",
+  "accept": [
+   "11806"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1250,
+  "top_dense": 0.9428,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11806-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أفرش بالمعجون وأحط قطرة عين وأنا صايم، يفطر؟",
+  "accept": [
+   "11806"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 46285,
+  "top_dense": 0.8752,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11806-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "قطرة العين للصائم؟",
+  "accept": [
+   "11806"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11806"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 828,
+  "top_dense": 0.8783,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.82"
+ },
+ {
+  "qid": "11806-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "المعجون والقطرات في الأنف والعين والأذن، هل تفسد الصوم إذا وجد طعمها؟",
+  "accept": [
+   "11806"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 880,
+  "top_dense": 0.9047,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4674-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "سؤاله الأخير يقول: في شهر رمضان الكريم مع أذان الفجر، أو أثناء أذان الفجر، هل يسمح بشرب الماء قبل إنهاء الأذان، وفقكم الله؟",
+  "accept": [
+   "4674"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 855,
+  "top_dense": 0.8916,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4674-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز الأكل أو الشرب أثناء أذان الفجر في رمضان؟",
+  "accept": [
+   "4674"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4674"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1223,
+  "top_dense": 0.9224,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.89"
+ },
+ {
+  "qid": "4674-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "الأذان يأذن وأنا أشرب موية، أكمل ولا أوقف؟",
+  "accept": [
+   "4674"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 175,
+  "top_dense": 0.8348,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "4674-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الشرب مع أذان الفجر؟",
+  "accept": [
+   "4674"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4674"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1502,
+  "top_dense": 0.887,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.89"
+ },
+ {
+  "qid": "4674-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "إذا بدأ المؤذن ينادي لصلاة الصبح وفي يدك الإناء، هل تكمل شربك؟",
+  "accept": [
+   "4674"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 213,
+  "top_dense": 0.8606,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11755-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "قرأت في بعض الكتب الفقهية ومنها كتاب (فقه السنة) لمؤلفه الشيخ سيد سابق أن الإبر المغذية وغيرها التي لا تدخل عن طريق الجوف أو الفم ليست مفطرة، وأعلم أن هناك رأيًا لبعض الفقهاء يقضي بغير ذلك. فما الرأي المعروف لدى جمهور العلماء؟ جزاكم الله خيرًا.",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 507,
+  "top_dense": 0.9214,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11755-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل الإبر المغذية تفسد الصيام؟",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 117,
+  "top_dense": 0.8958,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11755-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أخذت مغذي بالوريد وأنا صايم، صيامي صحيح؟",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 198,
+  "top_dense": 0.8447,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11755-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الإبر المغذية تفطر؟",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11755"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 200,
+  "top_dense": 0.9125,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.89"
+ },
+ {
+  "qid": "11755-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الحقن التي تقوم مقام الطعام والشراب، ما أثرها على صحة الصوم؟",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 161,
+  "top_dense": 0.8338,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11755-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Do nutritional IV injections break the fast?",
+  "accept": [
+   "11755"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11755"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3559,
+  "top_dense": 0.7934,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.80"
+ },
+ {
+  "qid": "1763-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل يشترط للجمع في المطر أن يكون المطر نازلًا في وقت الصلاة، أم لا؟",
+  "accept": [
+   "1763",
+   "2957",
+   "12949"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1675,
+  "top_dense": 0.9108,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1763-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يشترط للجمع بسبب المطر أن يكون نازلًا وقت الصلاة؟",
+  "accept": [
+   "1763",
+   "2957",
+   "12949"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1763"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2645,
+  "top_dense": 0.9111,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.87"
+ },
+ {
+  "qid": "1763-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "المطر وقف قبل الصلاة، نقدر نجمع ولا لا؟",
+  "accept": [
+   "1763",
+   "2957",
+   "12949"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 142,
+  "top_dense": 0.8554,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1763-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "شرط الجمع في المطر؟",
+  "accept": [
+   "1763",
+   "2957",
+   "12949"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5078"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2210,
+  "top_dense": 0.8504,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.84"
+ },
+ {
+  "qid": "1763-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الجمع للمطر، هل يكفي أن يكون الجو ممطرًا قبله أم لا بد من نزوله عند الصلاة؟",
+  "accept": [
+   "1763",
+   "2957",
+   "12949"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 186,
+  "top_dense": 0.8907,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11875-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "حكم من يجمع بين الصلاتين من أجل العمل؟ وهل صحيح أن الرسول ﷺ جمع بين الصلاتين؟",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11875"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2868,
+  "top_dense": 0.922,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.87"
+ },
+ {
+  "qid": "11875-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما حكم الجمع بين الصلاتين بسبب الدوام والعمل؟",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5077"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2868,
+  "top_dense": 0.9066,
+  "extractive_note": "primary=E2 overlap=0.75 cos=0.87"
+ },
+ {
+  "qid": "11875-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "دوامي طويل، أجمع الظهر مع العصر عشان الشغل؟",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 7,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "11875-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الجمع بسبب العمل؟",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "11875"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2060,
+  "top_dense": 0.8481,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "11875-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الموظف المشغول بعمله، هل له أن يضم صلاة إلى أخرى؟",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 137,
+  "top_dense": 0.8549,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "11875-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Can I combine prayers because of my work schedule?",
+  "accept": [
+   "11875",
+   "6299",
+   "5091"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 10,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "5079-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "الموالاة بين الصلاتين، إذ قد يتأخرون مدة تعتبر فصلا بين الصلاتين ويجمعون فما الحكم في ذلك؟",
+  "accept": [
+   "5079"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1101,
+  "top_dense": 0.9354,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5079-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل تشترط الموالاة بين الصلاتين المجموعتين؟",
+  "accept": [
+   "5079"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 143,
+  "top_dense": 0.8976,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5079-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "جمعنا بس تأخرنا شوي بين الصلاتين، صح جمعنا؟",
+  "accept": [
+   "5079"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 148,
+  "top_dense": 0.8266,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5079-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الفاصل بين الصلاتين عند الجمع؟",
+  "accept": [
+   "5079"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5079"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3096,
+  "top_dense": 0.8859,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.86"
+ },
+ {
+  "qid": "5079-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "إذا طال الوقت بين الأولى والثانية في الجمع، هل يبطل الجمع؟",
+  "accept": [
+   "5079"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5029"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2718,
+  "top_dense": 0.8473,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.84"
+ },
+ {
+  "qid": "3834-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "من احتاج إلى الغسل ولم يستطع استعمال الماء؛ لشدة البرد، ولعدم وجود وسيلة لتسخين الماء، فهل يتيمم لصلاة الفجر؟ ومن فعل ذلك فما الحكم؟",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 46405,
+  "top_dense": 0.9349,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3834-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يتيمم الجنب إذا لم يستطع الاغتسال لشدة البرد؟",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 849,
+  "top_dense": 0.8934,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3834-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "البرد شديد وما فيه موية حارة، أتيمم بدل الغسل؟",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 131,
+  "top_dense": 0.8727,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3834-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "التيمم للبرد؟",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6062"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2577,
+  "top_dense": 0.8637,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.85"
+ },
+ {
+  "qid": "3834-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من خاف الضرر من الماء البارد في الشتاء وعليه جنابة، بماذا يتطهر؟",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 223,
+  "top_dense": 0.8412,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3834-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Can I do tayammum instead of ghusl because the water is too cold?",
+  "accept": [
+   "3834",
+   "3796"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6062"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 3398,
+  "top_dense": 0.8459,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.84"
+ },
+ {
+  "qid": "3837-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "الأخ: ح. ص. ح - من بريدة يقول في سؤاله: هل يلزم الإنسان التيمم لكل صلاة؟ أم يجوز له أن يصلي ما شاء من الفروض والنوافل ما دام لم يحدث بعد التيمم؟ أفتونا جزاكم الله خيرا.",
+  "accept": [
+   "3837"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2115,
+  "top_dense": 0.8743,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3837-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجب التيمم لكل صلاة، أم يصلي بالتيمم الواحد عدة فروض؟",
+  "accept": [
+   "3837"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 308,
+  "top_dense": 0.8977,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3837-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "تيممت مرة، أصلي فيه كل الصلوات ولا أعيده كل مرة؟",
+  "accept": [
+   "3837"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 208,
+  "top_dense": 0.8181,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3837-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "التيمم لكل صلاة؟",
+  "accept": [
+   "3837"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3837"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3782,
+  "top_dense": 0.9108,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "3837-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الطهارة بالتراب، هل تبقى صالحة لأكثر من فريضة؟",
+  "accept": [
+   "3837"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 163,
+  "top_dense": 0.8167,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3832-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "إذا كان على إحدى يدي أو كلتيهما جبس أو بها جروح يضرهما الماء، فكيف التيمم؟ وهل حد الوجه في التيمم مثله في الوضوء؟",
+  "accept": [
+   "3832",
+   "1422",
+   "3831"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3832"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1476,
+  "top_dense": 0.9479,
+  "extractive_note": "primary=E1 overlap=0.75 cos=0.93"
+ },
+ {
+  "qid": "3832-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "كيف يتيمم من على يده جبيرة أو جروح يضرها الماء؟",
+  "accept": [
+   "3832",
+   "1422",
+   "3831"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3832"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1075,
+  "top_dense": 0.9063,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.88"
+ },
+ {
+  "qid": "3832-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "يدي فيها جبس، كيف أتوضأ أو أتيمم؟",
+  "accept": [
+   "3832",
+   "1422",
+   "3831"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 150,
+  "top_dense": 0.8961,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3832-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "التيمم مع الجبس؟",
+  "accept": [
+   "3832",
+   "1422",
+   "3831"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3832"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1339,
+  "top_dense": 0.8711,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.86"
+ },
+ {
+  "qid": "3832-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "العضو المجبور الذي لا يصله الماء، ما حكم طهارته؟",
+  "accept": [
+   "3832",
+   "1422",
+   "3831"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 157,
+  "top_dense": 0.8254,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "أرجو من سماحتكم أن تبينوا لنا طريقة التيمم الصحيحة.",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 4933,
+  "top_dense": 0.8582,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "ما الصفة الصحيحة للتيمم؟",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1548"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 6723,
+  "top_dense": 0.8529,
+  "extractive_note": "primary=E2 overlap=1.00 cos=0.84"
+ },
+ {
+  "qid": "1548-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "كيف أتيمم بالضبط؟",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 115,
+  "top_dense": 0.8516,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "طريقة التيمم؟",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 5514,
+  "top_dense": 0.8682,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "علمني خطوات الطهارة بالتراب كما وردت في السنة.",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 158,
+  "top_dense": 0.7725,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "كيف اتيمم صح",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 113,
+  "top_dense": 0.8334,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1548-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "How do I perform tayammum correctly?",
+  "accept": [
+   "1548",
+   "3826"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3826"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 6953,
+  "top_dense": 0.8284,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.82"
+ },
+ {
+  "qid": "5184-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "يقول هذا السائل سماحة الشيخ: إذا كنت أصلي قاعد؛ لأنني كبير في السن وعندي آلام في الركب، فهل في ذلك شيء يا سماحة الشيخ!؟",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 572,
+  "top_dense": 0.8749,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5184-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز للمريض أو كبير السن أن يصلي جالسًا؟",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 149,
+  "top_dense": 0.8836,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5184-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "ركبي تعورني وما أقدر أوقف، أصلي وأنا جالس؟",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 155,
+  "top_dense": 0.8173,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5184-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الصلاة جالسًا للمريض؟",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7506"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2812,
+  "top_dense": 0.8922,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.88"
+ },
+ {
+  "qid": "5184-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "العاجز عن القيام لألم أو كبر، كيف يؤدي صلاته؟",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 152,
+  "top_dense": 0.8776,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "5184-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Can an elderly person with knee pain pray sitting down?",
+  "accept": [
+   "5184",
+   "7506",
+   "5008",
+   "5007"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7506"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3878,
+  "top_dense": 0.8429,
+  "extractive_note": "primary=E3 overlap=0.00 cos=0.84"
+ },
+ {
+  "qid": "3951-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "من المعلوم أن المريض بعد إجراء العملية يبقى مخدرًا حتى يفيق، وبعد ذلك يبقى متألما عدة ساعات، فهل يصلي قبل دخول العملية والوقت لم يحن بعد؟ أم يؤخر الصلاة حتى يكون قادرًا على أدائها بحضور حسي ولو تأخر ذلك يومًا فأكثر؟",
+  "accept": [
+   "3951"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1306,
+  "top_dense": 0.9214,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3951-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز للمريض أن يقدم الصلاة قبل دخول العملية الجراحية؟",
+  "accept": [
+   "3951"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5010"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 17958,
+  "top_dense": 0.8924,
+  "extractive_note": "primary=E3 overlap=0.67 cos=0.87"
+ },
+ {
+  "qid": "3951-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "عندي عملية والتخدير بيطول، أصلي قبل وقتها؟",
+  "accept": [
+   "3951"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 151,
+  "top_dense": 0.8383,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "3951-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الصلاة قبل العملية؟",
+  "accept": [
+   "3951"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "3951"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2389,
+  "top_dense": 0.8941,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.85"
+ },
+ {
+  "qid": "3951-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "من سيغيب عن وعيه بسبب التخدير ساعات، كيف يرتب صلواته؟",
+  "accept": [
+   "3951"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 219,
+  "top_dense": 0.865,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1354-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "الذي عليه قضاء رمضان يصوم متصلًا، أو متفرقًا؟",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 344,
+  "top_dense": 0.8811,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1354-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجب التتابع في قضاء أيام رمضان؟",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4645"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3663,
+  "top_dense": 0.9015,
+  "extractive_note": "primary=E1 overlap=0.80 cos=0.89"
+ },
+ {
+  "qid": "1354-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "علي أيام من رمضان، أقضيها ورا بعض ولا متفرقة عادي؟",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 173,
+  "top_dense": 0.8544,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1354-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "التتابع في القضاء؟",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4645"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 2736,
+  "top_dense": 0.8336,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.83"
+ },
+ {
+  "qid": "1354-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "قضاء ما فات من الصوم، هل يلزم وصله أم يجوز تفريقه؟",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1621"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1147,
+  "top_dense": 0.8561,
+  "extractive_note": "primary=E1 overlap=0.71 cos=0.86"
+ },
+ {
+  "qid": "1354-typo",
+  "variant": "typo",
+  "kind": "in",
+  "question": "لازم اقضي رمضان متتابع",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 984,
+  "top_dense": 0.8312,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1354-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Do missed Ramadan days have to be made up consecutively?",
+  "accept": [
+   "1354",
+   "4645"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "4645"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3293,
+  "top_dense": 0.7986,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.80"
+ },
+ {
+  "qid": "1621-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "رجل عليه أيام من رمضان هل يجوز له أن يصوم هذه الأيام موزعة في كل يوم جمعة حيث يوجد عنده بقية الأيام عمل؟",
+  "accept": [
+   "1621"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1769,
+  "top_dense": 0.9029,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1621-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز قضاء أيام رمضان يوم الجمعة فقط؟",
+  "accept": [
+   "1621"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1621"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 4320,
+  "top_dense": 0.8927,
+  "extractive_note": "primary=E1 overlap=0.83 cos=0.89"
+ },
+ {
+  "qid": "1621-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أبي أقضي اللي علي من رمضان بس أيام الجمعة لأني فاضي، يصير؟",
+  "accept": [
+   "1621"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 408,
+  "top_dense": 0.8522,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "1621-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "القضاء يوم الجمعة؟",
+  "accept": [
+   "1621"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "1621"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 3200,
+  "top_dense": 0.8432,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.82"
+ },
+ {
+  "qid": "1621-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "تخصيص الجمعة لصوم الأيام الفائتة من رمضان، هل فيه حرج؟",
+  "accept": [
+   "1621"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 186,
+  "top_dense": 0.8906,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2926-original",
+  "variant": "original",
+  "kind": "in",
+  "question": "هل يجوز قضاء الصيام عن أحد أقربائي الذين توفوا، وعليه بعض شهر رمضان؟ ومن الذي يصوم عن أهله؟",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1568,
+  "top_dense": 0.9197,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2926-formal",
+  "variant": "formal",
+  "kind": "in",
+  "question": "هل يجوز الصيام عن الميت الذي عليه قضاء من رمضان؟",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2926"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 4464,
+  "top_dense": 0.9041,
+  "extractive_note": "primary=E2 overlap=0.75 cos=0.85"
+ },
+ {
+  "qid": "2926-colloquial",
+  "variant": "colloquial",
+  "kind": "in",
+  "question": "أمي الله يرحمها ماتت وعليها أيام من رمضان، أصوم عنها؟",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2270"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1482,
+  "top_dense": 0.8856,
+  "extractive_note": "primary=E3 overlap=0.67 cos=0.86"
+ },
+ {
+  "qid": "2926-short",
+  "variant": "short",
+  "kind": "in",
+  "question": "الصيام عن الميت؟",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "2926"
+  ],
+  "correct": true,
+  "unsupported": false,
+  "ms": 1322,
+  "top_dense": 0.8743,
+  "extractive_note": "primary=E1 overlap=1.00 cos=0.85"
+ },
+ {
+  "qid": "2926-different",
+  "variant": "different",
+  "kind": "in",
+  "question": "الأيام التي لم يقضها المتوفى من رمضان، هل يصومها أحد من أهله عنه؟",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2502,
+  "top_dense": 0.8849,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "2926-english",
+  "variant": "english",
+  "kind": "in",
+  "question": "Can I fast on behalf of my deceased mother who missed Ramadan days?",
+  "accept": [
+   "2926",
+   "2849"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5393"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2060,
+  "top_dense": 0.8448,
+  "extractive_note": "primary=E2 overlap=0.00 cos=0.82"
+ },
+ {
+  "qid": "disc-11377",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "طهرت من الحيض بعد الظهر في رمضان، هل أمسك بقية اليوم؟",
+  "accept": [
+   "11377"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 173,
+  "top_dense": 0.8827,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "disc-11374",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "طهرت من الحيض قبل الفجر لكن ما اغتسلت إلا بعد الأذان، صيامي صحيح؟",
+  "accept": [
+   "11374"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1733,
+  "top_dense": 0.8832,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "disc-3081",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "أفطرت في بيتي قبل ما أطلع للسفر في نهار رمضان، فيه شي علي؟",
+  "accept": [
+   "3081"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 253,
+  "top_dense": 0.8633,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "disc-4427",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "سافرت وأنا صايم واشتد علي الصوم في الطريق، أفطر؟",
+  "accept": [
+   "4427"
+  ],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "8503"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 2540,
+  "top_dense": 0.8715,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.88"
+ },
+ {
+  "qid": "disc-5083",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "خرجت من البلد بعد دخول وقت الظهر ووقفت أصلي بعد عشرة كيلو، أقصر الظهر؟",
+  "accept": [
+   "5083"
+  ],
+  "outcome": "clarification",
+  "reason": null,
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 9,
+  "top_dense": null,
+  "extractive_note": null
+ },
+ {
+  "qid": "disc-5040",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "بسافر بعد الظهر، أجمع العصر مع الظهر وأنا لسى في البلد؟",
+  "accept": [
+   "5040"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 192,
+  "top_dense": 0.8801,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "disc-3281",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "مرضت في رمضان واستمر معي المرض لين جاء رمضان الثاني، وش علي؟",
+  "accept": [
+   "3281"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 984,
+  "top_dense": 0.875,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "disc-4329",
+  "variant": "discrimination",
+  "kind": "in",
+  "question": "الماء يبعد عني ربع ساعة مشي، أقدر أتيمم؟",
+  "accept": [
+   "4329"
+  ],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 216,
+  "top_dense": 0.8793,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-0",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "هل يجوز للصائم استخدام بخاخ الربو؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 15303,
+  "top_dense": 0.8492,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-1",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "هل تجب الزكاة في ذهب المرأة الذي تلبسه؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 173,
+  "top_dense": 0.8214,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-2",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "هل الحقنة الشرجية تفطر الصائم؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 123,
+  "top_dense": 0.8687,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-3",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "ما حكم صيام يوم عرفة؟",
+  "accept": [],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "5094"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 4050,
+  "top_dense": 0.8471,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.83"
+ },
+ {
+  "qid": "false_positive-4",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "هل العطر الذي فيه كحول ينقض الوضوء؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 145,
+  "top_dense": 0.8461,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-5",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "ما حكم إخراج زكاة الفطر نقودًا؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 142,
+  "top_dense": 0.856,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "false_positive-6",
+  "variant": "false_positive",
+  "kind": "out",
+  "question": "هل يجوز للصائمة لبس العدسات اللاصقة؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 164,
+  "top_dense": 0.8439,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "hallucination-0",
+  "variant": "hallucination",
+  "kind": "out",
+  "question": "ما حكم الاحتفال بالمولد النبوي؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 131,
+  "top_dense": 0.7834,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "hallucination-1",
+  "variant": "hallucination",
+  "kind": "out",
+  "question": "ما حكم التداول في الأسهم الأمريكية؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 199,
+  "top_dense": 0.7689,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "hallucination-2",
+  "variant": "hallucination",
+  "kind": "out",
+  "question": "ما حكم استخدام الذكاء الاصطناعي في كتابة خطبة الجمعة؟",
+  "accept": [],
+  "outcome": "abstention",
+  "reason": "weak_evidence",
+  "cited": [],
+  "correct": false,
+  "unsupported": false,
+  "ms": 171,
+  "top_dense": 0.7871,
+  "extractive_note": "no evidence sentence directly addresses the question's key terms"
+ },
+ {
+  "qid": "hallucination-3",
+  "variant": "hallucination",
+  "kind": "out",
+  "question": "ما حكم تعدين العملات الرقمية؟",
+  "accept": [],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "7658"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 1367,
+  "top_dense": 0.7313,
+  "extractive_note": "primary=E1 overlap=0.67 cos=0.74"
+ },
+ {
+  "qid": "hallucination-4",
+  "variant": "hallucination",
+  "kind": "out",
+  "question": "What is the ruling on cryptocurrency trading?",
+  "accept": [],
+  "outcome": "answer",
+  "reason": null,
+  "cited": [
+   "6482"
+  ],
+  "correct": false,
+  "unsupported": false,
+  "ms": 7212,
+  "top_dense": 0.7531,
+  "extractive_note": "primary=E1 overlap=0.00 cos=0.76"
+ }
+]

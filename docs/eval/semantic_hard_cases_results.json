@@ -1,0 +1,303 @@
+{
+ "summary": {
+  "discrimination": "2/8",
+  "false_positive": "7/7",
+  "hallucination": "5/5",
+  "multi_turn": "1/3",
+  "hallucination_pretends_sources": 0
+ },
+ "discrimination": [
+  {
+   "q": "طهرت من الحيض بعد الظهر في رمضان، هل أمسك بقية اليوم؟",
+   "expect": "11377",
+   "not": "11374",
+   "outcome": "answer",
+   "rank_expected": 1,
+   "rank_wrong": null,
+   "cited": [
+    "11377"
+   ],
+   "verified": true,
+   "pass": true,
+   "summary": "عليها الإمساك في أصح قولي العلماء، وعليها قضاء ذلك اليوم.",
+   "ms": 8622
+  },
+  {
+   "q": "طهرت من الحيض قبل الفجر لكن ما اغتسلت إلا بعد الأذان، صيامي صحيح؟",
+   "expect": "11374",
+   "not": "11377",
+   "outcome": "abstention",
+   "rank_expected": null,
+   "rank_wrong": null,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 2528
+  },
+  {
+   "q": "أفطرت في بيتي قبل ما أطلع للسفر في نهار رمضان، فيه شي علي؟",
+   "expect": "3081",
+   "not": "4427",
+   "outcome": "abstention",
+   "rank_expected": null,
+   "rank_wrong": null,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 1585
+  },
+  {
+   "q": "سافرت وأنا صايم واشتد علي الصوم في الطريق، أفطر؟",
+   "expect": "4427",
+   "not": "3081",
+   "outcome": "abstention",
+   "rank_expected": 6,
+   "rank_wrong": 16,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 1559
+  },
+  {
+   "q": "خرجت من البلد بعد دخول وقت الظهر ووقفت أصلي بعد عشرة كيلو، أقصر الظهر؟",
+   "expect": "5083",
+   "not": "5040",
+   "outcome": "clarification",
+   "rank_expected": null,
+   "rank_wrong": null,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 1433
+  },
+  {
+   "q": "بسافر بعد الظهر، أجمع العصر مع الظهر وأنا لسى في البلد؟",
+   "expect": "5040",
+   "not": "5083",
+   "outcome": "abstention",
+   "rank_expected": null,
+   "rank_wrong": null,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 5859
+  },
+  {
+   "q": "مرضت في رمضان واستمر معي المرض لين جاء رمضان الثاني، وش علي؟",
+   "expect": "3281",
+   "not": "2773",
+   "outcome": "abstention",
+   "rank_expected": 2,
+   "rank_wrong": 11,
+   "cited": [],
+   "verified": false,
+   "pass": false,
+   "summary": null,
+   "ms": 10445
+  },
+  {
+   "q": "الماء يبعد عني ربع ساعة مشي، أقدر أتيمم؟",
+   "expect": "4329",
+   "not": "3834",
+   "outcome": "answer",
+   "rank_expected": 1,
+   "rank_wrong": null,
+   "cited": [
+    "4329"
+   ],
+   "verified": true,
+   "pass": true,
+   "summary": "لا، إذا كانت المسافة نحو ربع ساعة مشي فليس هذا عذرًا للتيمم، بل يلزمك الذهاب إلى الماء والوضوء منه.",
+   "ms": 6656
+  }
+ ],
+ "false_positive": [
+  {
+   "q": "هل يجوز للصائم استخدام بخاخ الربو؟",
+   "near": "7215 (asthma injections)",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1271
+  },
+  {
+   "q": "هل تجب الزكاة في ذهب المرأة الذي تلبسه؟",
+   "near": "zakat fatwas",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1370
+  },
+  {
+   "q": "هل الحقنة الشرجية تفطر الصائم؟",
+   "near": "11755 (nutritional injections)",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1136
+  },
+  {
+   "q": "ما حكم صيام يوم عرفة؟",
+   "near": "13528 (qasr at Arafah)",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 2339
+  },
+  {
+   "q": "هل العطر الذي فيه كحول ينقض الوضوء؟",
+   "near": "11843 (perfume while fasting)",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1696
+  },
+  {
+   "q": "ما حكم إخراج زكاة الفطر نقودًا؟",
+   "near": "zakat fatwas",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1384
+  },
+  {
+   "q": "هل يجوز للصائمة لبس العدسات اللاصقة؟",
+   "near": "11806 (eye drops)",
+   "outcome": "abstention",
+   "cited": [],
+   "summary": null,
+   "pass": true,
+   "ms": 1382
+  }
+ ],
+ "hallucination": [
+  {
+   "q": "ما حكم الاحتفال بالمولد النبوي؟",
+   "outcome": "abstention",
+   "summary": null,
+   "claims_shown": 0,
+   "pretends_sources": false,
+   "pass": true,
+   "ms": 2954
+  },
+  {
+   "q": "ما حكم التداول في الأسهم الأمريكية؟",
+   "outcome": "abstention",
+   "summary": null,
+   "claims_shown": 0,
+   "pretends_sources": false,
+   "pass": true,
+   "ms": 1950
+  },
+  {
+   "q": "ما حكم استخدام الذكاء الاصطناعي في كتابة خطبة الجمعة؟",
+   "outcome": "abstention",
+   "summary": null,
+   "claims_shown": 0,
+   "pretends_sources": false,
+   "pass": true,
+   "ms": 1567
+  },
+  {
+   "q": "ما حكم تعدين العملات الرقمية؟",
+   "outcome": "abstention",
+   "summary": null,
+   "claims_shown": 0,
+   "pretends_sources": false,
+   "pass": true,
+   "ms": 2462
+  },
+  {
+   "q": "What is the ruling on cryptocurrency trading?",
+   "outcome": "abstention",
+   "summary": null,
+   "claims_shown": 0,
+   "pretends_sources": false,
+   "pass": true,
+   "ms": 1344
+  }
+ ],
+ "multi_turn": [
+  {
+   "first": "هل يجوز لي القصر؟",
+   "reply": {
+    "option_id": "traveler"
+   },
+   "expect_categories": [
+    "صلاة المسافر",
+    "أحكام الجمع"
+   ],
+   "first_outcome": "clarification",
+   "clarification": "هل أنت مسافر أم مقيم؟",
+   "completed_question": "هل يجوز لي القصر؟ وأنا مسافر",
+   "second_outcome": "abstention",
+   "parent_ok": true,
+   "cited": [],
+   "cited_categories": [],
+   "verified": false,
+   "summary": null,
+   "ms": 9804,
+   "pass": false
+  },
+  {
+   "first": "هل يجوز لي القصر؟",
+   "reply": {
+    "text": "أنا مسافر حاليًا وبجلس يومين"
+   },
+   "expect_categories": [
+    "صلاة المسافر",
+    "أحكام الجمع"
+   ],
+   "first_outcome": "clarification",
+   "clarification": "هل أنت مسافر أم مقيم؟",
+   "completed_question": "هل يجوز لي القصر؟ أنا مسافر حاليًا وبجلس يومين",
+   "second_outcome": "abstention",
+   "parent_ok": true,
+   "cited": [],
+   "cited_categories": [],
+   "verified": false,
+   "summary": null,
+   "ms": 13987,
+   "pass": false
+  },
+  {
+   "first": "أفطرت في رمضان هل علي قضاء؟",
+   "reply": {
+    "option_id": "illness"
+   },
+   "expect_categories": [
+    "قضاء الصيام",
+    "الأعذار المبيحة للفطر",
+    "من يجب عليه الصوم",
+    "صلاة المريض"
+   ],
+   "first_outcome": "clarification",
+   "clarification": "ما سبب الفطر الذي تسأل عنه؟",
+   "completed_question": "أفطرت في رمضان هل علي قضاء؟ بسبب المرض",
+   "second_outcome": "answer",
+   "parent_ok": true,
+   "cited": [
+    "1189"
+   ],
+   "cited_categories": [
+    "الأعذار المبيحة للفطر",
+    "قضاء الصيام"
+   ],
+   "verified": true,
+   "summary": "نعم، «فعلى المريضة، والمريض إذا شفي أن يقضي ما أفطره من رمضان».",
+   "ms": 13952,
+   "pass": true
+  }
+ ]
+}

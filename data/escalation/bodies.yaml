@@ -1,0 +1,41 @@
+# Official bodies used for escalation (personal cases and high-risk questions).
+#
+# Rules:
+#   * Only official bodies. Only data that has been verified, with the date and method recorded.
+#   * No phone numbers or URLs unless verified from the body's own official channel.
+#   * active: false entries are kept for governance follow-up but are NEVER shown to users.
+
+bodies:
+  - id: moj
+    name_ar: وزارة العدل
+    name_en: Ministry of Justice (Saudi Arabia)
+    url: https://www.moj.gov.sa
+    description_ar: الجهة الحكومية المسؤولة عن مرفق القضاء والتوثيق في المملكة العربية السعودية.
+    description_en: The government body responsible for the judiciary and notarization in Saudi Arabia.
+    topics: [divorce, marriage, inheritance, disputes, contracts, personal_finance]
+    verified_at: 2026-10-03
+    verification_method: Official website reachable over HTTPS; page title «المملكة العربية السعودية | وزارة العدل».
+    active: true
+
+  - id: najiz
+    name_ar: منصة ناجز
+    name_en: Najiz platform
+    url: https://najiz.sa
+    description_ar: المنصة الإلكترونية للخدمات العدلية، وحقوقها محفوظة لوزارة العدل.
+    description_en: The Ministry of Justice's electronic services platform.
+    topics: [divorce, marriage, inheritance, disputes, contracts]
+    verified_at: 2026-10-03
+    verification_method: Official website reachable over HTTPS; page title «منصة ناجز»; footer «جميع الحقوق محفوظة لدى وزارة العدل».
+    active: true
+
+  - id: alifta
+    name_ar: الرئاسة العامة للبحوث العلمية والإفتاء
+    name_en: General Presidency of Scholarly Research and Ifta
+    url: https://www.alifta.gov.sa
+    description_ar: الجهة الرسمية للإفتاء في المملكة العربية السعودية.
+    description_en: The official fatwa authority in Saudi Arabia.
+    topics:
+      [divorce, marriage, inheritance, disputes, contracts, personal_finance, oaths_vows, high_risk]
+    verified_at: 2026-10-03
+    verification_method: Listed on the Ministry of Islamic Affairs website (moia.gov.sa); own website timed out during verification — kept inactive until verified (KNOWN_ISSUES S5).
+    active: false

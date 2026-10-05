@@ -1,0 +1,9 @@
+node_modules
+.next
+dist
+coverage
+services/ai
+data/corpus
+package-lock.json
+*.sql
+docs/eval

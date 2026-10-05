@@ -1,0 +1,90 @@
+# Clarification rules — slot detection for questions that cannot be answered without a missing fact.
+# Owned by the governance lead together with the AI engineer.
+#
+# A rule fires when the normalized question:
+#   * contains any term in `when_any`, and
+#   * contains any term in `context_any` (if given), and
+#   * contains a first-person marker (if `first_person: true`), and
+#   * contains none of the terms in `unless_any` (the slot is already filled).
+#
+# Choosing an option appends its `append_ar` / `append_en` text to the original question,
+# and the full pipeline runs again on the completed question.
+
+first_person_markers: [لي, انا, اقصر, اجمع, افطر, افطرت, علي, عندي, لدي, املك, مالي, اصلي, اصوم, can i, may i, should i, do i, i am, im, my]
+
+rules:
+  - id: travel_status
+    when_any: [قصر, اقصر, القصر, قصر الصلاه, الجمع, اجمع, جمع الصلاه, combine, shorten, shortening, qasr]
+    context_any: [صلاه, الصلاه, الصلوات, الظهر, العصر, المغرب, العشاء, اقصر, اجمع, القصر, الجمع, prayer, prayers, salah]
+    first_person: true
+    unless_any: [مسافر, مسافره, المسافر, سفر, السفر, اسافر, سافرت, سافر, بسافر, مقيم, المقيم, الحضر, مطر, المطر, مريض, المرض, رحله, travel, traveling, travelling, traveller, traveler, journey, trip, resident, rain, sick]
+    question_ar: هل أنت مسافر أم مقيم؟
+    question_en: Are you travelling or are you a resident (not travelling)?
+    options:
+      - id: traveler
+        label_ar: مسافر
+        label_en: Travelling
+        append_ar: وأنا مسافر
+        append_en: and I am travelling
+      - id: resident
+        label_ar: مقيم
+        label_en: Resident
+        append_ar: وأنا مقيم في بلدي ولست مسافرًا
+        append_en: and I am a resident, not travelling
+
+  - id: fasting_excuse
+    when_any: [افطر, افطرت, الفطر, افطار, break my fast, break the fast, not fast]
+    context_any: [رمضان, صيام, الصيام, صوم, الصوم, اصوم, ramadan, fast, fasting]
+    first_person: true
+    unless_any: [سفر, مسافر, السفر, سافرت, اسافر, مسافره, مريض, مرض, المرض, مرضت, حامل, الحمل, مرضع, رضاع, الرضاع, كبير السن, كبر السن, الحيض, حايض, النفاس, عذر, بدون عذر, travel, travelling, sick, ill, pregnant, breastfeeding, elderly, menstruation, excuse]
+    question_ar: ما سبب الفطر الذي تسأل عنه؟
+    question_en: What is the reason for not fasting?
+    options:
+      - id: travel
+        label_ar: السفر
+        label_en: Travel
+        append_ar: بسبب السفر
+        append_en: because of travel
+      - id: illness
+        label_ar: المرض
+        label_en: Illness
+        append_ar: بسبب المرض
+        append_en: because of illness
+      - id: pregnancy
+        label_ar: الحمل أو الرضاع
+        label_en: Pregnancy or breastfeeding
+        append_ar: بسبب الحمل أو الرضاع
+        append_en: because of pregnancy or breastfeeding
+      - id: old_age
+        label_ar: كبر السن
+        label_en: Old age
+        append_ar: بسبب كبر السن
+        append_en: because of old age
+
+  - id: zakat_asset
+    when_any: [زكاه, الزكاه, زكاتي, zakat]
+    first_person: true
+    unless_any: [ذهب, الذهب, فضه, الفضه, حلي, نقود, النقود, راتب, الراتب, رواتب, مدخرات, اسهم, الاسهم, عروض, تجاره, التجاره, ابل, غنم, بقر, زروع, ثمار, عقار, ارض, ريال, gold, silver, cash, savings, salary, stocks, shares, trade, property, land]
+    question_ar: ما نوع المال الذي تسأل عن زكاته؟
+    question_en: What kind of wealth are you asking about?
+    options:
+      - id: cash
+        label_ar: نقود ومدخرات
+        label_en: Cash and savings
+        append_ar: والمال نقود مدخرة
+        append_en: and the wealth is saved cash
+      - id: gold
+        label_ar: ذهب أو فضة
+        label_en: Gold or silver
+        append_ar: والمال ذهب أو فضة
+        append_en: and the wealth is gold or silver
+      - id: trade
+        label_ar: عروض تجارة
+        label_en: Trade goods
+        append_ar: والمال عروض تجارة
+        append_en: and the wealth is trade goods
+      - id: land
+        label_ar: أرض أو عقار
+        label_en: Land or property
+        append_ar: والمال أرض أو عقار
+        append_en: and the wealth is land or property

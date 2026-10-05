@@ -1,0 +1,2095 @@
+{
+ "summary": {
+  "colloquial": {
+   "n": 39,
+   "verified_correct": 11,
+   "answer_wrong_source": 0,
+   "abstained": 28
+  },
+  "different": {
+   "n": 39,
+   "verified_correct": 10,
+   "answer_wrong_source": 1,
+   "abstained": 28
+  },
+  "english": {
+   "n": 16,
+   "verified_correct": 7,
+   "answer_wrong_source": 1,
+   "abstained": 8
+  },
+  "negatives_answered": 0,
+  "negatives_total": 12,
+  "unsupported_shown": 0
+ },
+ "pos": [
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "5654",
+    "5030",
+    "5084",
+    "6500",
+    "11371",
+    "5024"
+   ],
+   "unsupported_shown": 0,
+   "ms": 2216,
+   "variant": "colloquial",
+   "qid": "4395-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "4396",
+    "5013",
+    "5083",
+    "5027",
+    "5020",
+    "5084"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5024,
+   "variant": "different",
+   "qid": "4395-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "4396"
+   ],
+   "top": [
+    "5082",
+    "5031",
+    "4512",
+    "5027",
+    "4396",
+    "5030"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5645,
+   "variant": "english",
+   "qid": "4395-english",
+   "ok": false,
+   "wrong": true
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5027",
+    "5020",
+    "5023",
+    "2469",
+    "5136",
+    "5026"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5001,
+   "variant": "colloquial",
+   "qid": "2768-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "2768"
+   ],
+   "top": [
+    "5020",
+    "5027",
+    "5136",
+    "5023",
+    "2768",
+    "5083"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5158,
+   "variant": "different",
+   "qid": "2768-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5042",
+    "5084",
+    "5018",
+    "5027",
+    "5015",
+    "5013"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4887,
+   "variant": "colloquial",
+   "qid": "5017-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5017",
+    "5013",
+    "5015",
+    "1099",
+    "5014",
+    "5043"
+   ],
+   "unsupported_shown": 0,
+   "ms": 7067,
+   "variant": "different",
+   "qid": "5017-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "5013",
+    "5015",
+    "5016",
+    "5031",
+    "5042"
+   ],
+   "top": [
+    "5015",
+    "5042",
+    "5013",
+    "5016",
+    "5084",
+    "5031"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4753,
+   "variant": "english",
+   "qid": "5017-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5027",
+    "5084",
+    "5042",
+    "2461",
+    "5043",
+    "5030"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4902,
+   "variant": "colloquial",
+   "qid": "5025-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5024",
+    "5025",
+    "5032",
+    "5023",
+    "5084",
+    "1504"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4581,
+   "variant": "different",
+   "qid": "5025-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5027",
+    "5043",
+    "5024",
+    "2461",
+    "5030",
+    "5083"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1801,
+   "variant": "english",
+   "qid": "5025-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3770",
+    "3774",
+    "3785"
+   ],
+   "top": [
+    "3785",
+    "3770",
+    "3649",
+    "3594",
+    "3768",
+    "3774"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5471,
+   "variant": "colloquial",
+   "qid": "3785-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3770",
+    "3785"
+   ],
+   "top": [
+    "3785",
+    "3770",
+    "3768",
+    "3861",
+    "11383",
+    "3649"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5457,
+   "variant": "different",
+   "qid": "3785-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3770",
+    "3785"
+   ],
+   "top": [
+    "7209",
+    "3770",
+    "3785",
+    "3768",
+    "10932",
+    "11453"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3330,
+   "variant": "english",
+   "qid": "3785-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "3649",
+    "3775",
+    "3735",
+    "3749",
+    "3586",
+    "3745"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1752,
+   "variant": "colloquial",
+   "qid": "1973-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3861",
+    "1973",
+    "11383",
+    "3900",
+    "11374",
+    "3829"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4209,
+   "variant": "different",
+   "qid": "1973-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3749",
+    "3770",
+    "3750",
+    "3747",
+    "3748",
+    "1449"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5923,
+   "variant": "colloquial",
+   "qid": "1449-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1449",
+    "3750"
+   ],
+   "top": [
+    "3770",
+    "3750",
+    "3749",
+    "3747",
+    "1449",
+    "3748"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6181,
+   "variant": "different",
+   "qid": "1449-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3746",
+    "3748",
+    "3749",
+    "3750"
+   ],
+   "top": [
+    "3750",
+    "3749",
+    "3747",
+    "3770",
+    "3748",
+    "3746"
+   ],
+   "unsupported_shown": 0,
+   "ms": 7257,
+   "variant": "english",
+   "qid": "1449-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3784"
+   ],
+   "top": [
+    "7209",
+    "3736",
+    "3649",
+    "3784",
+    "2455",
+    "985"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5077,
+   "variant": "colloquial",
+   "qid": "3784-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3784",
+    "3770",
+    "3783",
+    "985",
+    "3588",
+    "1450"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5344,
+   "variant": "different",
+   "qid": "3784-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1807",
+    "7209",
+    "3586",
+    "3736",
+    "5011",
+    "2455"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5489,
+   "variant": "colloquial",
+   "qid": "1807-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3737",
+    "7273",
+    "3774",
+    "3900",
+    "3830",
+    "2822"
+   ],
+   "unsupported_shown": 0,
+   "ms": 9556,
+   "variant": "different",
+   "qid": "1807-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3611"
+   ],
+   "top": [
+    "3611",
+    "3586",
+    "3650",
+    "3594",
+    "3735",
+    "7273"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4453,
+   "variant": "colloquial",
+   "qid": "3611-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3611",
+    "3581",
+    "3579",
+    "3588",
+    "3828",
+    "3737"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4800,
+   "variant": "different",
+   "qid": "3611-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3650",
+    "1179",
+    "7273",
+    "3594",
+    "3826",
+    "3586"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4025,
+   "variant": "colloquial",
+   "qid": "3650-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3650",
+    "3832",
+    "3816",
+    "2243",
+    "3579",
+    "3826"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3450,
+   "variant": "different",
+   "qid": "3650-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3773",
+    "3586",
+    "3775",
+    "3830",
+    "3774",
+    "3735"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4106,
+   "variant": "colloquial",
+   "qid": "3773-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "3736",
+    "3900",
+    "3735",
+    "3737",
+    "7209",
+    "3586"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1875,
+   "variant": "different",
+   "qid": "3773-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3773"
+   ],
+   "top": [
+    "7209",
+    "4923",
+    "7658",
+    "5010",
+    "3773",
+    "5030"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3538,
+   "variant": "english",
+   "qid": "3773-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1386"
+   ],
+   "top": [
+    "2257",
+    "1386",
+    "6501",
+    "4334",
+    "3074",
+    "6500"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4400,
+   "variant": "colloquial",
+   "qid": "1386-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1386",
+    "4334",
+    "6501",
+    "1981",
+    "2257",
+    "9061"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4921,
+   "variant": "different",
+   "qid": "1386-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1779"
+   ],
+   "top": [
+    "1779",
+    "6499",
+    "4334",
+    "1909",
+    "6501",
+    "6500"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4646,
+   "variant": "colloquial",
+   "qid": "1779-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1779"
+   ],
+   "top": [
+    "1779",
+    "1909",
+    "6502",
+    "1981",
+    "3068",
+    "6501"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4739,
+   "variant": "different",
+   "qid": "1779-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "982",
+    "1278",
+    "1063",
+    "1708",
+    "6501",
+    "1981"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5378,
+   "variant": "colloquial",
+   "qid": "1278-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "982",
+    "1063",
+    "1278",
+    "1708",
+    "1609",
+    "1051"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5086,
+   "variant": "different",
+   "qid": "1278-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "982",
+    "1278",
+    "1063",
+    "1708",
+    "1908",
+    "1609"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4909,
+   "variant": "english",
+   "qid": "1278-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "6501",
+    "6500",
+    "6499",
+    "1078",
+    "3074",
+    "2257"
+   ],
+   "unsupported_shown": 0,
+   "ms": 2346,
+   "variant": "colloquial",
+   "qid": "3068-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3068"
+   ],
+   "top": [
+    "3068",
+    "6502",
+    "1081",
+    "1909",
+    "6500",
+    "6499"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4976,
+   "variant": "different",
+   "qid": "3068-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "6502",
+    "9061",
+    "1078",
+    "6482",
+    "1426",
+    "11455"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3044,
+   "variant": "colloquial",
+   "qid": "6502-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "6502",
+    "9061",
+    "1022",
+    "6482",
+    "1426",
+    "4334"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4713,
+   "variant": "different",
+   "qid": "6502-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "7215",
+    "8581",
+    "7501",
+    "4461",
+    "7466",
+    "11353"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5435,
+   "variant": "colloquial",
+   "qid": "7215-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "11353",
+    "7215",
+    "11348",
+    "11383",
+    "3080",
+    "11457"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5346,
+   "variant": "different",
+   "qid": "7215-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "7215",
+    "11353",
+    "7203",
+    "4457",
+    "7466",
+    "8581"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6043,
+   "variant": "english",
+   "qid": "7215-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "8065"
+   ],
+   "top": [
+    "5011",
+    "8065",
+    "7209",
+    "11455",
+    "2849",
+    "5012"
+   ],
+   "unsupported_shown": 0,
+   "ms": 7524,
+   "variant": "colloquial",
+   "qid": "8065-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "8065",
+    "7209",
+    "5011",
+    "3124",
+    "5012",
+    "11383"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5403,
+   "variant": "different",
+   "qid": "8065-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "10657",
+    "6892"
+   ],
+   "top": [
+    "6892",
+    "10657",
+    "11348",
+    "8581",
+    "7203",
+    "11371"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5400,
+   "variant": "colloquial",
+   "qid": "6892-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "6892",
+    "10657",
+    "11348",
+    "7203",
+    "11373",
+    "7209"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6107,
+   "variant": "different",
+   "qid": "6892-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3080",
+    "4457",
+    "6778",
+    "11353",
+    "7501",
+    "5009"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6946,
+   "variant": "colloquial",
+   "qid": "2773-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "6047",
+    "11353",
+    "4457",
+    "6778",
+    "5009",
+    "8581"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5806,
+   "variant": "different",
+   "qid": "2773-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "8503",
+    "3081",
+    "7328",
+    "1815",
+    "7203",
+    "4776"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5107,
+   "variant": "colloquial",
+   "qid": "3081-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "8503",
+    "1815",
+    "4776",
+    "3081",
+    "7328",
+    "6947"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5826,
+   "variant": "different",
+   "qid": "3081-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "7209",
+    "11361",
+    "11455",
+    "11360",
+    "7273",
+    "3834"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1324,
+   "variant": "colloquial",
+   "qid": "1241-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1241",
+    "11383",
+    "3861",
+    "3003",
+    "4781",
+    "985"
+   ],
+   "unsupported_shown": 0,
+   "ms": 2776,
+   "variant": "different",
+   "qid": "1241-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "7209",
+    "3831",
+    "12558",
+    "11374",
+    "3783",
+    "11806"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1521,
+   "variant": "english",
+   "qid": "1241-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "11839",
+    "11843"
+   ],
+   "top": [
+    "11839",
+    "11843",
+    "3736",
+    "11806",
+    "3861",
+    "3649"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4486,
+   "variant": "colloquial",
+   "qid": "11843-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "11843",
+    "11839",
+    "7209",
+    "11806",
+    "10932",
+    "3736"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5983,
+   "variant": "different",
+   "qid": "11843-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "11806",
+    "11755",
+    "3736",
+    "11839",
+    "3861",
+    "3775"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3663,
+   "variant": "colloquial",
+   "qid": "11806-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "11806",
+    "4641",
+    "11839",
+    "10932",
+    "3736",
+    "11843"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5262,
+   "variant": "different",
+   "qid": "11806-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "4674"
+   ],
+   "top": [
+    "4674",
+    "3736",
+    "3649",
+    "3783",
+    "11383",
+    "11806"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4350,
+   "variant": "colloquial",
+   "qid": "4674-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "4674"
+   ],
+   "top": [
+    "4674",
+    "3774",
+    "11746",
+    "5078",
+    "3735",
+    "3834"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5062,
+   "variant": "different",
+   "qid": "4674-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "7209",
+    "3861",
+    "11383",
+    "11374",
+    "7843",
+    "5011"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1367,
+   "variant": "colloquial",
+   "qid": "11755-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "7215"
+   ],
+   "top": [
+    "7209",
+    "11755",
+    "11383",
+    "7215",
+    "3080",
+    "10932"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4799,
+   "variant": "different",
+   "qid": "11755-different",
+   "ok": false,
+   "wrong": true
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "11755",
+    "7215"
+   ],
+   "top": [
+    "11755",
+    "7209",
+    "11453",
+    "7466",
+    "3080",
+    "7215"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4190,
+   "variant": "english",
+   "qid": "11755-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5075",
+    "11585",
+    "5076",
+    "12949",
+    "13134",
+    "5088"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3600,
+   "variant": "colloquial",
+   "qid": "1763-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5075",
+    "1763",
+    "5076",
+    "2155",
+    "11585",
+    "2957"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6103,
+   "variant": "different",
+   "qid": "1763-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "6299",
+    "9581"
+   ],
+   "top": [
+    "6299",
+    "9581",
+    "2461",
+    "5028",
+    "5091",
+    "5089"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5849,
+   "variant": "colloquial",
+   "qid": "11875-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "11875",
+    "6299",
+    "9581"
+   ],
+   "top": [
+    "11875",
+    "6299",
+    "5079",
+    "5043",
+    "9581",
+    "5082"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5275,
+   "variant": "different",
+   "qid": "11875-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "10359",
+    "11875",
+    "5077",
+    "6299",
+    "9581"
+   ],
+   "top": [
+    "6299",
+    "11875",
+    "9581",
+    "5077",
+    "4796",
+    "10359"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4518,
+   "variant": "english",
+   "qid": "11875-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "7209",
+    "10359",
+    "5091",
+    "7658",
+    "5028",
+    "5079"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6350,
+   "variant": "colloquial",
+   "qid": "5079-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5079",
+    "5091",
+    "9581",
+    "5028",
+    "5046",
+    "5029"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4756,
+   "variant": "different",
+   "qid": "5079-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3834",
+    "3796",
+    "6062",
+    "3831",
+    "3830",
+    "2809"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5956,
+   "variant": "colloquial",
+   "qid": "3834-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3834",
+    "1422",
+    "3579",
+    "3816",
+    "6062",
+    "3737"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5584,
+   "variant": "different",
+   "qid": "3834-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "6062",
+    "3834",
+    "3836",
+    "2958",
+    "3796",
+    "4329"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4225,
+   "variant": "english",
+   "qid": "3834-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "4890",
+    "3837",
+    "3836",
+    "3830",
+    "3831",
+    "3736"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5946,
+   "variant": "colloquial",
+   "qid": "3837-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "3829",
+    "5329",
+    "3861",
+    "11383",
+    "11374",
+    "3828"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1574,
+   "variant": "different",
+   "qid": "3837-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "3832",
+    "3831",
+    "3829",
+    "1422",
+    "3830",
+    "3826"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5883,
+   "variant": "colloquial",
+   "qid": "3832-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1422"
+   ],
+   "top": [
+    "3579",
+    "1422",
+    "1551",
+    "3900",
+    "4308",
+    "3829"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5474,
+   "variant": "different",
+   "qid": "3832-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1548",
+    "3826"
+   ],
+   "top": [
+    "3826",
+    "3829",
+    "1548",
+    "3832",
+    "3836",
+    "3834"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4582,
+   "variant": "colloquial",
+   "qid": "1548-colloquial",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1548",
+    "3826"
+   ],
+   "top": [
+    "1548",
+    "3826",
+    "7209",
+    "11371",
+    "7658",
+    "3124"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4709,
+   "variant": "different",
+   "qid": "1548-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "1548",
+    "3826"
+   ],
+   "top": [
+    "3826",
+    "1548",
+    "3832",
+    "3829",
+    "3830",
+    "6062"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4243,
+   "variant": "english",
+   "qid": "1548-english",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5007",
+    "4308",
+    "5008",
+    "11371",
+    "3736",
+    "7429"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6954,
+   "variant": "colloquial",
+   "qid": "5184-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "answer",
+   "insufficient": false,
+   "cited": [
+    "3900",
+    "5007",
+    "5009",
+    "7429"
+   ],
+   "top": [
+    "7429",
+    "5008",
+    "4308",
+    "3900",
+    "5009",
+    "5007"
+   ],
+   "unsupported_shown": 0,
+   "ms": 6484,
+   "variant": "different",
+   "qid": "5184-different",
+   "ok": true,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5008",
+    "5184",
+    "7506",
+    "7429",
+    "5009",
+    "4308"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3833,
+   "variant": "english",
+   "qid": "5184-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5010",
+    "3951",
+    "3830",
+    "5011",
+    "5012",
+    "3124"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5451,
+   "variant": "colloquial",
+   "qid": "3951-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5010",
+    "3951",
+    "5011",
+    "3900",
+    "3124",
+    "5012"
+   ],
+   "unsupported_shown": 0,
+   "ms": 7377,
+   "variant": "different",
+   "qid": "3951-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "1549",
+    "11348",
+    "11371",
+    "5019",
+    "11493",
+    "6947"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1732,
+   "variant": "colloquial",
+   "qid": "1354-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1354",
+    "4645",
+    "11353",
+    "11383",
+    "1621",
+    "2926"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4735,
+   "variant": "different",
+   "qid": "1354-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1549",
+    "4645",
+    "1354",
+    "4785",
+    "11371",
+    "4759"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4022,
+   "variant": "english",
+   "qid": "1354-english",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1621",
+    "11371",
+    "11455",
+    "7209",
+    "1549",
+    "11348"
+   ],
+   "unsupported_shown": 0,
+   "ms": 4661,
+   "variant": "colloquial",
+   "qid": "1621-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "1621",
+    "4785",
+    "4645",
+    "8581",
+    "11353",
+    "7203"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5485,
+   "variant": "different",
+   "qid": "1621-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5393",
+    "2587",
+    "5009",
+    "2849",
+    "2926",
+    "1242"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5976,
+   "variant": "colloquial",
+   "qid": "2926-colloquial",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "2587",
+    "2926",
+    "2849",
+    "11455",
+    "11353",
+    "1242"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5593,
+   "variant": "different",
+   "qid": "2926-different",
+   "ok": false,
+   "wrong": false
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": false,
+   "cited": [],
+   "top": [
+    "5009",
+    "5393",
+    "1242",
+    "11455",
+    "5881",
+    "2849"
+   ],
+   "unsupported_shown": 0,
+   "ms": 5539,
+   "variant": "english",
+   "qid": "2926-english",
+   "ok": false,
+   "wrong": false
+  }
+ ],
+ "neg": [
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "11843",
+    "11806",
+    "10932",
+    "11839",
+    "11348",
+    "3834"
+   ],
+   "unsupported_shown": 0,
+   "ms": 2099,
+   "q": "هل يجوز للصائم استخدام بخاخ الربو؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "1081",
+    "9061",
+    "1094",
+    "6482",
+    "4334",
+    "6502"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1531,
+   "q": "هل تجب الزكاة في ذهب المرأة الذي تلبسه؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "11755",
+    "7209",
+    "3861",
+    "11806",
+    "11383",
+    "4641"
+   ],
+   "unsupported_shown": 0,
+   "ms": 3258,
+   "q": "هل الحقنة الشرجية تفطر الصائم؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "5094",
+    "11348",
+    "7843",
+    "4923",
+    "7213",
+    "11746"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1494,
+   "q": "ما حكم صيام يوم عرفة؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "3581",
+    "3772",
+    "3775",
+    "3773",
+    "3579",
+    "3770"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1178,
+   "q": "هل العطر الذي فيه كحول ينقض الوضوء؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "6502",
+    "6482",
+    "6500",
+    "1908",
+    "1081",
+    "9061"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1445,
+   "q": "ما حكم إخراج زكاة الفطر نقودًا؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "11806",
+    "1241",
+    "3861",
+    "11383",
+    "11839",
+    "11373"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1512,
+   "q": "هل يجوز للصائمة لبس العدسات اللاصقة؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "5350",
+    "11371",
+    "3649",
+    "3770",
+    "7433",
+    "8002"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1350,
+   "q": "ما حكم الاحتفال بالمولد النبوي؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "6502",
+    "9061",
+    "6482",
+    "3737",
+    "5022",
+    "3746"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1620,
+   "q": "ما حكم التداول في الأسهم الأمريكية؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "1498",
+    "11453",
+    "5085",
+    "5088",
+    "12949",
+    "3951"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1579,
+   "q": "ما حكم استخدام الذكاء الاصطناعي في كتابة خطبة الجمعة؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "6482",
+    "6502",
+    "1094",
+    "9061",
+    "11371",
+    "11843"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1258,
+   "q": "ما حكم تعدين العملات الرقمية؟"
+  },
+  {
+   "outcome": "abstention",
+   "insufficient": true,
+   "cited": [],
+   "top": [
+    "6482",
+    "9061",
+    "6502",
+    "11371",
+    "5022",
+    "7433"
+   ],
+   "unsupported_shown": 0,
+   "ms": 1440,
+   "q": "What is the ruling on cryptocurrency trading?"
+  }
+ ]
+}

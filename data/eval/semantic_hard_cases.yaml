@@ -1,0 +1,68 @@
+# Hard cases for the semantic evaluation. Expected outcomes were checked against the corpus by text search
+# (e.g. no fatwa about asthma inhalers, jewelry zakat, enemas, Arafah fasting, zakat al-fitr, alcohol in
+# perfume, contact lenses, stock trading, mawlid, AI-written sermons, cryptocurrency).
+
+# Two fatwas that look alike: the question must reach the RIGHT one, not the closest wording.
+discrimination:
+  - q: طهرت من الحيض بعد الظهر في رمضان، هل أمسك بقية اليوم؟
+    expect: "11377"
+    not: "11374"
+  - q: طهرت من الحيض قبل الفجر لكن ما اغتسلت إلا بعد الأذان، صيامي صحيح؟
+    expect: "11374"
+    not: "11377"
+  - q: أفطرت في بيتي قبل ما أطلع للسفر في نهار رمضان، فيه شي علي؟
+    expect: "3081"
+    not: "4427"
+  - q: سافرت وأنا صايم واشتد علي الصوم في الطريق، أفطر؟
+    expect: "4427"
+    not: "3081"
+  - q: خرجت من البلد بعد دخول وقت الظهر ووقفت أصلي بعد عشرة كيلو، أقصر الظهر؟
+    expect: "5083"
+    not: "5040"
+  - q: بسافر بعد الظهر، أجمع العصر مع الظهر وأنا لسى في البلد؟
+    expect: "5040"
+    not: "5083"
+  - q: مرضت في رمضان واستمر معي المرض لين جاء رمضان الثاني، وش علي؟
+    expect: "3281"
+    not: "2773"
+  - q: الماء يبعد عني ربع ساعة مشي، أقدر أتيمم؟
+    expect: "4329"
+    not: "3834"
+
+# Close in wording to indexed fatwas but NOT answered by any of them → abstain (or clarify), never borrow.
+false_positive:
+  - q: هل يجوز للصائم استخدام بخاخ الربو؟
+    near: "7215 (asthma injections)"
+  - q: هل تجب الزكاة في ذهب المرأة الذي تلبسه؟
+    near: "zakat fatwas"
+  - q: هل الحقنة الشرجية تفطر الصائم؟
+    near: "11755 (nutritional injections)"
+  - q: ما حكم صيام يوم عرفة؟
+    near: "13528 (qasr at Arafah)"
+  - q: هل العطر الذي فيه كحول ينقض الوضوء؟
+    near: "11843 (perfume while fasting)"
+  - q: ما حكم إخراج زكاة الفطر نقودًا؟
+    near: "zakat fatwas"
+  - q: هل يجوز للصائمة لبس العدسات اللاصقة؟
+    near: "11806 (eye drops)"
+
+# No evidence at all → abstain; the answer must not pretend to rely on sources.
+hallucination:
+  - q: ما حكم الاحتفال بالمولد النبوي؟
+  - q: ما حكم التداول في الأسهم الأمريكية؟
+  - q: ما حكم استخدام الذكاء الاصطناعي في كتابة خطبة الجمعة؟
+  - q: ما حكم تعدين العملات الرقمية؟
+  - q: What is the ruling on cryptocurrency trading?
+
+# Multi-turn: clarification, then the completed question must keep the same issue, cite a fatwa from the
+# expected category and pass verification.
+multi_turn:
+  - first: هل يجوز لي القصر؟
+    reply: { option_id: traveler }
+    expect_categories: [صلاة المسافر, أحكام الجمع]
+  - first: هل يجوز لي القصر؟
+    reply: { text: أنا مسافر حاليًا وبجلس يومين }
+    expect_categories: [صلاة المسافر, أحكام الجمع]
+  - first: أفطرت في رمضان هل علي قضاء؟
+    reply: { option_id: illness }
+    expect_categories: [قضاء الصيام, الأعذار المبيحة للفطر, من يجب عليه الصوم, صلاة المريض]

@@ -1,0 +1,12 @@
+# The web app on Netlify. The API runs elsewhere (the Hugging Face Space, deploy/backend); set in the Netlify project:
+#   NEXT_PUBLIC_API_BASE  the API origin the browser calls directly (no proxy in between, so long answers don't time out)
+#   API_INTERNAL_URL      the same origin, for server-rendered pages
+[build]
+  command = "npm run build -w @tibyan/contracts && npm run build -w @tibyan/web"
+  publish = "apps/web/.next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

@@ -1,0 +1,45 @@
+{
+  "name": "tibyan",
+  "version": "0.1.0",
+  "private": true,
+  "description": "تِبْيان | Tibyan — AI-powered trusted Islamic knowledge retrieval platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build -w @tibyan/contracts && npm run build -w @tibyan/api && npm run build -w @tibyan/web",
+    "lint": "npm run lint --workspaces --if-present && npm run ai:lint",
+    "typecheck": "npm run build -w @tibyan/contracts && npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present && npm run ai:test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:migrate": "npm run migrate -w @tibyan/api",
+    "db:seed": "node scripts/py.mjs -m tibyan_ai.cli seed",
+    "db:reindex": "node scripts/py.mjs -m tibyan_ai.cli reindex",
+    "ai:setup": "node scripts/ai-setup.mjs",
+    "ai:dev": "node scripts/py.mjs -m uvicorn tibyan_ai.main:app --reload --port 8000",
+    "ai:lint": "node scripts/py.mjs -m ruff check services/ai && node scripts/py.mjs -m ruff format --check services/ai",
+    "ai:test": "node scripts/py.mjs -m pytest -q services/ai/tests",
+    "eval": "node scripts/py.mjs -m tibyan_ai.cli eval",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.6.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,mjs,cjs,json,md,css,yml,yaml}": "prettier --write --ignore-unknown",
+    "services/ai/**/*.py": "node scripts/py.mjs -m ruff format"
+  }
+}

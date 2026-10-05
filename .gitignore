@@ -1,0 +1,51 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*service-account*.json
+credentials*.json
+
+# --- Node ---
+node_modules/
+.npm/
+dist/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+
+# --- Model caches (downloaded at runtime) ---
+.cache/
+models_cache/
+fastembed_cache/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Fatwa texts belong to their publishers: only data/corpus/manifest.jsonl is versioned ---
+data/corpus/*/
+
+# --- Logs ---
+*.log
+logs/

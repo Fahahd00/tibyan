@@ -1,0 +1,142 @@
+# تِبْيان | Tibyan — local environment
+#
+#   cp .env.example .env
+#   docker compose up --build
+#
+# Start-up order: db → migrate (SQL migrations) → seed (sources + corpus indexing) → ai → api → web
+# First run downloads the embedding model (multilingual-e5-large, ~2.2 GB) into the `model-cache` volume.
+
+name: tibyan
+
+x-env: &env
+  env_file:
+    - path: .env
+      required: false
+
+x-db-url: &db-url postgresql://${POSTGRES_USER:-tibyan}:${POSTGRES_PASSWORD:-tibyan_local_dev_only}@db:5432/${POSTGRES_DB:-tibyan}
+
+services:
+  db:
+    restart: unless-stopped
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-tibyan}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tibyan_local_dev_only}
+      POSTGRES_DB: ${POSTGRES_DB:-tibyan}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+  migrate:
+    <<: *env
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    command: ["node", "apps/api/dist/db/migrate.js"]
+    environment:
+      DATABASE_URL: *db-url
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  seed:
+    <<: *env
+    build:
+      context: .
+      dockerfile: services/ai/Dockerfile
+    # The fatwa texts are not in the repository: the first run fetches them from the original websites
+    # (data/corpus/manifest.jsonl, about an hour at one request per second), later runs skip that step.
+    command: ["sh", "-c", "python -m tibyan_ai.cli fetch-corpus; python -m tibyan_ai.cli seed"]
+    environment:
+      DATABASE_URL: *db-url
+      TIBYAN_DATA_DIR: /app/data
+      FASTEMBED_CACHE_DIR: /models
+    volumes:
+      - model-cache:/models
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: "no"
+
+  ai:
+    restart: unless-stopped
+    <<: *env
+    build:
+      context: .
+      dockerfile: services/ai/Dockerfile
+    environment:
+      DATABASE_URL: *db-url
+      TIBYAN_DATA_DIR: /app/data
+      FASTEMBED_CACHE_DIR: /models
+    volumes:
+      - model-cache:/models
+    ports:
+      - "127.0.0.1:${AI_PORT:-8000}:8000"
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health', timeout=3).status == 200 else 1)",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  api:
+    restart: unless-stopped
+    <<: *env
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: *db-url
+      AI_SERVICE_URL: http://ai:8000
+      API_PORT: 4000
+    ports:
+      - "${API_PORT:-4000}:4000"
+    depends_on:
+      ai:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://localhost:4000/api/health').then(r => process.exit(r.status < 500 ? 0 : 1)).catch(() => process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  web:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        API_INTERNAL_URL: http://api:4000
+    environment:
+      API_INTERNAL_URL: http://api:4000
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  db-data:
+  model-cache:

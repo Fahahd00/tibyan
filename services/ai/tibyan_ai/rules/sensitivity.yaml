@@ -1,0 +1,175 @@
+# Sensitivity rules — owned by the governance lead. Changes require governance review.
+#
+# Terms are matched on *normalized* text (no diacritics, ا/أ/إ/آ → ا, ة → ه, ى → ي),
+# so write them in normalized form. A single-word term also matches with a leading و/ف/ب/ل.
+#
+# Classification:
+#   high_risk      → any high_risk term                          → ESCALATION (no answer)
+#   personal_case  → a sensitive topic AND a personal marker      → ESCALATION (no ruling)
+#   sensitive_topic→ a sensitive topic only (general question)    → answer general info + referral notice
+#   general        → otherwise
+
+topics:
+  divorce:
+    label_ar: الطلاق والخلع
+    label_en: Divorce
+    label_bn: "তালাক ও খোলা"
+    label_ms: "talak dan khuluk"
+    label_uz: "taloq va xul’"
+    label_kk: "талақ пен хұлғ"
+    label_ha: "saki da khul'i"
+    label_ur: طلاق اور خلع
+    label_hi: तलाक़ और ख़ुलअ
+    label_tr: boşanma ve hul
+    label_id: talak dan khulu
+    terms: [طلاق, الطلاق, طلق, طلقت, طلقه, طلقتين, طالق, الطلقه, خلع, الخلع, ظهار, الظهار, ايلاء, عده الطلاق, رجعه, ارجاع زوجتي, divorce, divorced, talaq, khula]
+  marriage:
+    label_ar: الزواج والنكاح
+    label_en: Marriage
+    label_bn: "বিবাহ"
+    label_ms: "perkahwinan"
+    label_uz: "nikoh"
+    label_kk: "неке"
+    label_ha: "aure"
+    label_ur: نکاح
+    label_hi: विवाह (निकाह)
+    label_tr: evlilik ve nikâh
+    label_id: pernikahan
+    terms: [عقد النكاح, عقد الزواج, نكاح, النكاح, المهر, مهر, ولي امرها, الولي, زواج المسيار, marriage contract, nikah, mahr, dowry]
+  inheritance:
+    label_ar: المواريث والوصايا
+    label_en: Inheritance
+    label_bn: "উত্তরাধিকার ও অসিয়ত"
+    label_ms: "pusaka dan wasiat"
+    label_uz: "meros va vasiyat"
+    label_kk: "мұра және өсиет"
+    label_ha: "gado da wasiyya"
+    label_ur: وراثت اور وصیت
+    label_hi: विरासत और वसीयत
+    label_tr: miras ve vasiyet
+    label_id: warisan dan wasiat
+    terms: [ميراث, الميراث, ورث, ورثه, الورثه, الورث, تركه, التركه, وصيه, الوصيه, الفرائض, فرايض, نصيبي, inheritance, inherit, estate, heirs]
+  disputes:
+    label_ar: النزاعات والخصومات
+    label_en: Disputes
+    label_bn: "বিবাদ ও মামলা"
+    label_ms: "pertikaian dan perselisihan"
+    label_uz: "nizolar va janjallar"
+    label_kk: "дау-дамайлар"
+    label_ha: "rikice-rikice da shari'u"
+    label_ur: تنازعات اور جھگڑے
+    label_hi: विवाद और झगड़े
+    label_tr: anlaşmazlıklar ve davalar
+    label_id: sengketa dan perselisihan
+    terms: [نزاع, خصومه, قضيه, المحكمه, محكمه, دعوي, شكوي, اشتكي, خلاف مع, dispute, lawsuit, court]
+  contracts:
+    label_ar: العقود والمعاملات الخاصة
+    label_en: Private contracts
+    label_bn: "ব্যক্তিগত চুক্তি ও লেনদেন"
+    label_ms: "akad dan urusan peribadi"
+    label_uz: "shaxsiy shartnomalar va muomalalar"
+    label_kk: "жеке шарттар мен мәмілелер"
+    label_ha: "kwangiloli da mu'amaloli na kai"
+    label_ur: نجی معاہدے اور معاملات
+    label_hi: निजी अनुबंध और लेन-देन
+    label_tr: özel akitler ve muameleler
+    label_id: akad dan transaksi pribadi
+    terms: [عقد ايجار, عقد بيع, عقد شراكه, شراكه, كفاله, ضمان, الشرط الجزايي, contract, partnership, guarantee]
+  personal_finance:
+    label_ar: المعاملات المالية الشخصية
+    label_en: Personal financial dealings
+    label_bn: "ব্যক্তিগত আর্থিক লেনদেন"
+    label_ms: "urusan kewangan peribadi"
+    label_uz: "shaxsiy moliyaviy muomalalar"
+    label_kk: "жеке қаржылық мәмілелер"
+    label_ha: "mu'amalolin kuɗi na kai"
+    label_ur: ذاتی مالی معاملات
+    label_hi: व्यक्तिगत वित्तीय लेन-देन
+    label_tr: kişisel mali işlemler
+    label_id: transaksi keuangan pribadi
+    terms: [قرض, القرض, اقترضت, دين, الدين, ديون, تمويل, التمويل, اقساط, تقسيط, فوايد, الفوايد, ربا, الربا, loan, mortgage, interest, debt, financing]
+  oaths_vows:
+    label_ar: الأيمان والنذور
+    label_en: Oaths and vows
+    label_bn: "কসম ও মানত"
+    label_ms: "sumpah dan nazar"
+    label_uz: "qasamlar va nazrlar"
+    label_kk: "ант пен нәзір"
+    label_ha: "rantsuwa da bakance"
+    label_ur: قسمیں اور نذریں
+    label_hi: क़सम और मन्नत
+    label_tr: yeminler ve adaklar
+    label_id: sumpah dan nazar
+    terms: [حلفت, اليمين, يمين, كفاره يمين, نذرت, نذر, النذر, oath, vow, swore]
+
+# First-person / individual-circumstance markers.
+personal_markers:
+  - طلقت
+  - طلقني
+  - طلقها
+  - زوجتي
+  - زوجي
+  - امراتي
+  - مرتي
+  - ابي
+  - ابوي
+  - والدي
+  - امي
+  - والدتي
+  - اخي
+  - اخوي
+  - اختي
+  - ولدي
+  - ابني
+  - بنتي
+  - عمي
+  - خالي
+  - جدي
+  - جدتي
+  - ورثت
+  - توفي
+  - توفيت
+  - مات
+  - ماتت
+  - حلفت
+  - نذرت
+  - اقترضت
+  - استدنت
+  - قلت لزوجتي
+  - قالت لي
+  - قال لي
+  - حالتي
+  - مشكلتي
+  - قضيتي
+  - وضعي
+  - my wife
+  - my husband
+  - my father
+  - my mother
+  - my brother
+  - my sister
+  - my son
+  - my daughter
+  - i divorced
+  - divorced me
+  - i swore
+  - i vowed
+  - my case
+  - my situation
+  - passed away
+  - i borrowed
+  - i owe
+
+high_risk:
+  label_ar: مسائل عالية الخطورة
+  label_en: High-risk matters
+  label_bn: "অত্যন্ত ঝুঁকিপূর্ণ বিষয়"
+  label_ms: "masalah berisiko tinggi"
+  label_uz: "o‘ta xavfli masalalar"
+  label_kk: "аса қауіпті мәселелер"
+  label_ha: "al'amura masu haɗari sosai"
+  label_ur: انتہائی حساس مسائل
+  label_hi: अत्यधिक जोखिम वाले मामले
+  label_tr: yüksek riskli konular
+  label_id: masalah berisiko tinggi
+  terms: [تكفير, يكفر, اكفر, اقتل, قتل النفس, قتل شخص, قتل انسان, قتل الكفار, قتل المرتد, انتحار, انتحر, اقتل نفسي, اذي نفسي, تفجير, ارهاب, الارهاب, اغتيال, سفك الدماء, kill someone, kill myself, killing people, suicide, bomb, terror, terrorism, takfir, self harm]
