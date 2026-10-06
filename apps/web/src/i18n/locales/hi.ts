@@ -13,6 +13,7 @@ export const hi: Dictionary = {
     about: "परिचय",
     admin: "प्रबंधन",
     switchLanguage: "भाषा",
+    menu: "मेनू",
     skip: "सामग्री पर जाएँ",
     verify: "फ़तवे की जाँच",
     hajj: "हज और उमरा",

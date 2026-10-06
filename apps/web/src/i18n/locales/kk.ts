@@ -13,6 +13,7 @@ export const kk: Dictionary = {
     about: "Жоба туралы",
     admin: "Басқару",
     switchLanguage: "Тіл",
+    menu: "Мәзір",
     skip: "Мазмұнға өту",
     verify: "Пәтуаны тексеру",
     hajj: "Қажылық және умра",

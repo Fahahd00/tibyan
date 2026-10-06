@@ -13,6 +13,7 @@ export const ur: Dictionary = {
     about: "تبیان کا تعارف",
     admin: "نگرانی",
     switchLanguage: "زبان",
+    menu: "مینو",
     skip: "مواد پر جائیں",
     verify: "فتوے کی تصدیق",
     hajj: "حج و عمرہ",

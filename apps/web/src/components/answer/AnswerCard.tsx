@@ -110,6 +110,7 @@ export function AnswerCard({
         <SectionTitle>{dict.answer.summary}</SectionTitle>
         <p
           lang={quoteLang(answer.summary ?? "")}
+          dir="auto" // an answer in English inside the Arabic page reads left-to-right
           className="font-naskh text-[1.32rem] leading-[2.15] text-ink"
         >
           {answer.summary}
@@ -130,6 +131,7 @@ export function AnswerCard({
                 <div>
                   <p
                     lang={quoteLang(c.text)}
+                    dir="auto"
                     className="font-naskh text-[1.08rem] leading-[2.05] text-ink-2"
                   >
                     {c.text}

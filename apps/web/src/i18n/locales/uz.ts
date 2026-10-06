@@ -13,6 +13,7 @@ export const uz: Dictionary = {
     about: "Loyiha haqida",
     admin: "Boshqaruv",
     switchLanguage: "Til",
+    menu: "Menyu",
     skip: "Mazmunga o‘tish",
     verify: "Fatvoni tekshirish",
     hajj: "Haj va umra",

@@ -13,6 +13,7 @@ export const ha: Dictionary = {
     about: "Game da mu",
     admin: "Gudanarwa",
     switchLanguage: "Harshe",
+    menu: "Menu",
     skip: "Je zuwa abun ciki",
     verify: "Tantance fatawa",
     hajj: "Hajji da Umra",

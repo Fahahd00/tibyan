@@ -13,6 +13,7 @@ export const ms: Dictionary = {
     about: "Tentang",
     admin: "Tadbir urus",
     switchLanguage: "Bahasa",
+    menu: "Menu",
     skip: "Langkau ke kandungan",
     verify: "Semak fatwa",
     hajj: "Haji & Umrah",

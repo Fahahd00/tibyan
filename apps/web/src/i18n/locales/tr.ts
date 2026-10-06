@@ -13,6 +13,7 @@ export const tr: Dictionary = {
     about: "Hakkında",
     admin: "Yönetim",
     switchLanguage: "Dil",
+    menu: "Menü",
     skip: "İçeriğe geç",
     verify: "Fetva doğrula",
     hajj: "Hac ve Umre",

@@ -13,6 +13,7 @@ export const id: Dictionary = {
     about: "Tentang",
     admin: "Tata kelola",
     switchLanguage: "Bahasa",
+    menu: "Menu",
     skip: "Langsung ke konten",
     verify: "Cek fatwa",
     hajj: "Haji & Umrah",

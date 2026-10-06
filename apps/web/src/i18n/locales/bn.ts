@@ -13,6 +13,7 @@ export const bn: Dictionary = {
     about: "পরিচিতি",
     admin: "পরিচালনা",
     switchLanguage: "ভাষা",
+    menu: "মেনু",
     skip: "মূল বিষয়ে যান",
     verify: "ফতোয়া যাচাই",
     hajj: "হজ ও উমরাহ",
