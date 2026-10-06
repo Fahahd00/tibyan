@@ -34,9 +34,6 @@ def test_seed_registers_governance_state(seeded):
         "alifta": "pending",
         "binothaimeen": "not_indexed",
         "hadeethenc": "not_indexed",
-        "dar-alifta": "on_demand",
-        "aliftaa-jo": "on_demand",
-        "eftaa-kw": "on_demand",
     }
 
 

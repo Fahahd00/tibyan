@@ -29,11 +29,11 @@ def test_result_urls_prefer_cited_pages_then_consulted_sources():
     ]
 
 
-def test_only_fatwa_pages_of_the_searched_tier_are_fetched():
+def test_only_fatwa_pages_of_the_searched_sources_are_fetched():
     urls = [
         "https://binbaz.org.sa/categories/fiqhi/50",  # a category page, not a fatwa
         "https://binothaimeen.net/content/1124",  # fetched from the HTML edition
-        "https://www.dar-alifta.org/ar/fatwa/details/11050/x",  # fallback tier: not searched now
+        "https://example.org/fatwa/details/11050/x",  # not an approved website
         "https://binbaz.org.sa/fatwas/4299/y",
         "https://binbaz.org.sa/fatwas/4299/y-again",
     ]
@@ -51,60 +51,48 @@ def _result(outcome: str, code: str | None = None) -> PipelineResult:
     return PipelineResult(payload=payload, trace={"stages": [{"key": "retrieval"}]})
 
 
-def _wire(monkeypatch, answers: list[PipelineResult], found: dict[bool, list]):
-    calls = {"once": [], "search": []}
+def _wire(monkeypatch, answers: list[PipelineResult], found: list):
+    calls = {"once": 0, "search": 0}
 
     def fake_once(**kw):
-        calls["once"].append(kw.get("slugs"))
+        calls["once"] += 1
         return answers.pop(0)
 
-    def fake_search(question, *, primary):
-        calls["search"].append(primary)
-        return found[primary]
+    def fake_search(question):
+        calls["search"] += 1
+        return found
 
     monkeypatch.setattr(orchestrator, "_ask_once", fake_once)
     monkeypatch.setattr(live_search, "enabled", lambda: True)
-    monkeypatch.setattr(live_search, "primary_slugs", lambda: ["binbaz", "binothaimeen"])
     monkeypatch.setattr(live_search, "search_and_ingest", fake_search)
-    monkeypatch.setattr(live_search, "tier_domains", lambda primary: {"dar-alifta": ["dar-alifta.org"]})
-    monkeypatch.setattr(live_search, "has_documents", lambda slugs: False)
     return calls
 
 
 def test_answer_from_the_index_needs_no_search(monkeypatch):
-    calls = _wire(monkeypatch, [_result("answer")], {True: [], False: []})
+    calls = _wire(monkeypatch, [_result("answer")], [])
     orchestrator.ask(text="سؤال", persist_result=False)
-    assert calls == {"once": [["binbaz", "binothaimeen"]], "search": []}
+    assert calls == {"once": 1, "search": 0}
 
 
-def test_primary_websites_are_searched_before_the_fallback_authorities(monkeypatch):
+def test_the_websites_are_searched_when_the_index_cannot_answer(monkeypatch):
     page = {"source": "binbaz", "title": "t", "url": "u", "status": "new"}
-    calls = _wire(
-        monkeypatch,
-        [_result("abstention", "weak_evidence"), _result("answer")],
-        {True: [page], False: [page]},
-    )
+    calls = _wire(monkeypatch, [_result("abstention", "weak_evidence"), _result("answer")], [page])
     result = orchestrator.ask(text="سؤال", persist_result=False)
-    assert calls == {"once": [["binbaz", "binothaimeen"]] * 2, "search": [True]}
+    assert calls == {"once": 2, "search": 1}
     assert [st["key"] for st in result.trace["stages"]] == ["live_search", "retrieval"]
 
 
-def test_fallback_authorities_are_used_only_when_the_primary_ones_have_nothing(monkeypatch):
-    page = {"source": "dar-alifta", "title": "t", "url": "u", "status": "new"}
-    calls = _wire(
-        monkeypatch,
-        [_result("abstention", "no_source"), _result("answer")],
-        {True: [], False: [page]},
-    )
-    orchestrator.ask(text="سؤال", persist_result=False)
-    # Second attempt searches every approved source (fallback fatwas included).
-    assert calls == {"once": [["binbaz", "binothaimeen"], None], "search": [True, False]}
+def test_nothing_found_on_the_websites_keeps_the_abstention(monkeypatch):
+    calls = _wire(monkeypatch, [_result("abstention", "no_source")], [])
+    result = orchestrator.ask(text="سؤال", persist_result=False)
+    assert calls == {"once": 1, "search": 1}
+    assert result.payload["outcome"] == "abstention"
 
 
 def test_refusals_that_are_not_about_missing_sources_never_search(monkeypatch):
-    calls = _wire(monkeypatch, [_result("abstention", "out_of_scope")], {True: [], False: []})
+    calls = _wire(monkeypatch, [_result("abstention", "out_of_scope")], [])
     orchestrator.ask(text="كيف أطبخ الكبسة؟", persist_result=False)
-    assert calls["search"] == []
+    assert calls["search"] == 0
 
 
 def test_every_source_with_a_relevant_fatwa_gets_a_slot():
@@ -143,10 +131,10 @@ def test_a_cross_source_conflict_is_settled_by_the_highest_priority_source():
 
     from tibyan_ai.pipeline.orchestrator import top_priority
 
-    baz, othaimeen, egypt = evidence("E1"), evidence("E2"), evidence("E3")
-    baz.source["priority"], othaimeen.source["priority"], egypt.source["priority"] = 1, 2, 3
-    assert [c.ref for c in top_priority([othaimeen, baz, egypt])] == ["E1"]
-    assert [c.ref for c in top_priority([othaimeen, egypt])] == ["E2"]
+    baz, othaimeen, hadith = evidence("E1"), evidence("E2"), evidence("E3")
+    baz.source["priority"], othaimeen.source["priority"], hadith.source["priority"] = 1, 2, 3
+    assert [c.ref for c in top_priority([othaimeen, baz, hadith])] == ["E1"]
+    assert [c.ref for c in top_priority([othaimeen, hadith])] == ["E2"]
 
 
 def test_the_answer_is_rewritten_from_ibn_baz_when_it_quotes_another_source_although_he_answers():

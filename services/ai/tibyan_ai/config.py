@@ -57,7 +57,7 @@ class Settings(BaseSettings):
     # The LLM classifier can only RAISE sensitivity above the rule-based floor; off saves one call per question.
     llm_classifier: bool = Field(True, alias="LLM_CLASSIFIER")
     # Live search: when the index cannot answer, approved websites are searched (OpenAI web search, domain-restricted)
-    # and the fatwa pages found are fetched, parsed verbatim and indexed. Primary sources first, fallback ones after.
+    # and the fatwa pages found are fetched, parsed verbatim and indexed.
     live_search: bool = Field(True, alias="LIVE_SEARCH")
     live_search_max_pages: int = Field(4, alias="LIVE_SEARCH_MAX_PAGES")
     live_search_timeout_s: float = Field(45.0, alias="LIVE_SEARCH_TIMEOUT_S")

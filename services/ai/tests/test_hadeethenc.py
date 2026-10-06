@@ -1,6 +1,5 @@
 from tibyan_ai.ingestion.binbaz import content_hash
 from tibyan_ai.ingestion.hadeethenc import snapshot
-from tibyan_ai.pipeline import live_search
 
 ITEM = {  # shape of https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=2962 (abridged)
     "id": "2962",
@@ -25,9 +24,3 @@ def test_a_hadith_is_stored_with_its_grade_explanation_and_benefits_verbatim():
     assert paragraphs[3] == "المراجع: صحيح البخاري (6864)."
     assert "\n" not in snap.answer.replace("\n\n", "")  # one line per section: the chunker keeps it verbatim
     assert snap.content_sha256 == content_hash("", snap.answer)  # what the seed checks before indexing
-
-
-def test_indexed_sources_are_searched_first_and_live_search_authorities_after():
-    primary = live_search.primary_slugs()
-    assert {"binbaz", "binothaimeen", "hadeethenc"} <= set(primary)
-    assert not {"dar-alifta", "aliftaa-jo", "eftaa-kw", "alifta"} & set(primary)

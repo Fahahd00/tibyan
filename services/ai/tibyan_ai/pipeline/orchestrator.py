@@ -255,8 +255,7 @@ def ask(
     skip_clarification: bool = False,
     persist_result: bool = True,
 ) -> PipelineResult:
-    """The pipeline, plus live search when the index cannot answer: Ibn Baz and Ibn Uthaymeen first (index, then
-    their websites); the fallback fatwa authorities only when the primary sources have no fatwa that answers."""
+    """The pipeline, plus live search on the websites of Ibn Baz and Ibn Uthaymeen when the index cannot answer."""
     once = partial(
         _ask_once,
         text=text,
@@ -270,25 +269,16 @@ def ask(
     if not live_search.enabled():
         result = once()
     else:
-        primary = live_search.primary_slugs()
-        result = once(slugs=primary)
+        result = once()
         meters, stages = [usage.current_meter()], []
-        for tier_primary in (True, False):
-            if not _unanswered(result):
-                break
+        if _unanswered(result):
             # The redacted question is what goes to the search, never the raw text.
             t0, query = time.perf_counter(), result.payload["question"]["text"]
-            added = live_search.search_and_ingest(query, primary=tier_primary)
-            stages.append(live_search.trace_stage(t0, tier_primary, added))
-            if tier_primary and added:
-                result = once(slugs=primary)
-            elif not tier_primary and (
-                added or live_search.has_documents(list(live_search.tier_domains(False)))
-            ):
-                result = once()  # fallback fatwas (just found or indexed earlier) may now answer
-            else:
-                continue
-            meters.append(usage.current_meter())
+            added = live_search.search_and_ingest(query)
+            stages.append(live_search.trace_stage(t0, added))
+            if added:
+                result = once()
+                meters.append(usage.current_meter())
         _merge_attempts(result, [m for m in meters if m is not None], stages)
     if persist_result and result.save:
         result.save()

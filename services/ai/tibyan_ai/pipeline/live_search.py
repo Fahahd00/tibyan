@@ -1,12 +1,9 @@
-"""Live search: when the index cannot answer, look for the fatwa on the approved websites themselves.
+"""Live search: when the index cannot answer, look for the fatwa on the websites of Ibn Baz and Ibn Uthaymeen.
 
-OpenAI web search, restricted to the domains of one tier of approved sources, only PROPOSES pages. Each page is then
+OpenAI web search, restricted to the domains of the approved sources, only PROPOSES pages. Each page is then
 fetched and parsed by Tibyan's own site parser — verbatim, with URL, fetch time and content hash — and indexed like
 any snapshot, so the normal pipeline answers from it and the next asker gets it from the index. Nothing written by
 the search model is ever used as evidence or shown.
-
-Tiers follow the registry `priority`: the primary sources (Ibn Baz, Ibn Uthaymeen) are searched first; the fallback
-authorities only when the primary ones have no fatwa that answers the question.
 """
 
 from __future__ import annotations
@@ -23,16 +20,13 @@ import httpx
 
 from ..config import get_settings
 from ..db import connection
-from ..ingestion import binbaz, binothaimeen, ifta_sites
+from ..ingestion import binbaz, binothaimeen
 from ..ingestion.binbaz import USER_AGENT, FatwaSnapshot
 from ..ingestion.seed import load_registry, upsert_snapshot
 from ..providers import registry, usage
 from ..providers.base import ProviderError, openai_base_url
-from .retrieval import LOWEST_PRIORITY
 
 log = logging.getLogger(__name__)
-
-PRIMARY_MAX_PRIORITY = 2
 
 SEARCH_INSTRUCTIONS = """You find fatwa pages for Tibyan on a fixed list of official websites.
 Search those websites for fatwas whose question matches the user's question (it may be colloquial Arabic).
@@ -65,24 +59,6 @@ SITES = [
         lambda _url, fatwa_id: f"{binothaimeen.BASE_URL}/content/{fatwa_id}",
         binothaimeen.parse_fatwa_page,
     ),
-    Site(
-        "dar-alifta",
-        re.compile(r"^https?://(?:www\.)?dar-alifta\.org/ar/fatwa/details/(\d+)"),
-        _same,
-        ifta_sites.parse_dar_alifta,
-    ),
-    Site(
-        "aliftaa-jo",
-        re.compile(r"^https?://(?:www\.)?aliftaa\.jo/fatwa/(\d+)", re.I),
-        _same,
-        ifta_sites.parse_aliftaa_jo,
-    ),
-    Site(
-        "eftaa-kw",
-        re.compile(r"^https?://eftaa\.awqaf\.gov\.kw/ar/[^?#]*-(\d+)/?$"),
-        _same,
-        ifta_sites.parse_eftaa_kw,
-    ),
 ]
 _BY_SLUG = {site.slug: site for site in SITES}
 
@@ -92,33 +68,12 @@ def enabled() -> bool:
     return s.live_search and not s.is_test and bool(s.openai_api_key.strip())
 
 
-def primary_slugs() -> list[str]:
-    """The indexed sources (searched first); the live-search-only authorities come after them."""
-    reg = load_registry(Path(get_settings().data_dir))
-    return [s["slug"] for s in reg if s.get("ingestion", "none") not in ("live_search", "none")]
-
-
-def tier_domains(primary: bool) -> dict[str, list[str]]:
-    """slug → domains of the approved, live-searchable sources of one tier."""
+def search_domains() -> dict[str, list[str]]:
+    """slug → domains of the approved sources whose websites live search can read."""
     reg = load_registry(Path(get_settings().data_dir))
     with connection() as conn:
         approved = {r["slug"] for r in conn.execute("SELECT slug FROM sources WHERE status = 'approved'")}
-    return {
-        s["slug"]: s.get("domains", [])
-        for s in reg
-        if s["slug"] in _BY_SLUG
-        and s["slug"] in approved
-        and (s.get("priority", LOWEST_PRIORITY) <= PRIMARY_MAX_PRIORITY) == primary
-    }
-
-
-def has_documents(slugs: list[str]) -> bool:
-    with connection() as conn:
-        row = conn.execute(
-            "SELECT EXISTS (SELECT 1 FROM documents d JOIN sources s ON s.id = d.source_id WHERE s.slug = ANY(%s))",
-            (slugs,),
-        ).fetchone()
-    return bool(row["exists"])
+    return {s["slug"]: s.get("domains", []) for s in reg if s["slug"] in _BY_SLUG and s["slug"] in approved}
 
 
 def find_urls(question: str, domains: list[str]) -> list[str]:
@@ -233,11 +188,11 @@ def _fetch(site: Site, url: str, fatwa_id: str) -> FatwaSnapshot | None:
         return None
 
 
-def search_and_ingest(question: str, *, primary: bool) -> list[dict]:
-    """Search one tier of approved websites, index the fatwas found; returns what was added. Never raises."""
+def search_and_ingest(question: str) -> list[dict]:
+    """Search the approved websites, index the fatwas found; returns what was added. Never raises."""
     s = get_settings()
     try:
-        domains = tier_domains(primary)
+        domains = search_domains()
         if not domains:
             return []
         urls = find_urls(question, sorted({d for ds in domains.values() for d in ds}))
@@ -256,27 +211,19 @@ def search_and_ingest(question: str, *, primary: bool) -> list[dict]:
                     {"source": snap.source_slug, "title": snap.title, "url": snap.url, "status": status}
                 )
             conn.commit()
-        log.info(
-            "live search tier=%s urls=%d pages=%d indexed=%d",
-            "primary" if primary else "fallback",
-            len(urls),
-            len(pages),
-            len(added),
-        )
+        log.info("live search urls=%d pages=%d indexed=%d", len(urls), len(pages), len(added))
         return added
     except Exception as exc:  # live search is an extra chance, never a reason to fail the question
         log.warning("live search skipped: %s", exc)
         return []
 
 
-def trace_stage(t0: float, primary: bool, added: list[dict]) -> dict:
-    who_ar = "ابن باز وابن عثيمين" if primary else "جهات الإفتاء الاحتياطية"
-    who_en = "Ibn Baz and Ibn Uthaymeen" if primary else "fallback fatwa authorities"
+def trace_stage(t0: float, added: list[dict]) -> dict:
     return {
         "key": "live_search",
         "status": "ok" if added else "skipped",
         "duration_ms": round((time.perf_counter() - t0) * 1000, 1),
-        "summary_ar": f"بحث مباشر في مواقع {who_ar}: أُضيفت {len(added)} فتوى إلى الفهرس",
-        "summary_en": f"Live search on the websites of {who_en}: {len(added)} fatwa(s) added to the index",
-        "output": {"tier": "primary" if primary else "fallback", "pages": added},
+        "summary_ar": f"بحث مباشر في مواقع ابن باز وابن عثيمين: أُضيفت {len(added)} فتوى إلى الفهرس",
+        "summary_en": f"Live search on the websites of Ibn Baz and Ibn Uthaymeen: {len(added)} fatwa(s) added to the index",
+        "output": {"pages": added},
     }

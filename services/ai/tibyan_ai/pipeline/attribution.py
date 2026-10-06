@@ -183,7 +183,7 @@ def check(text: str) -> dict:
     searched_live = False
     if (not matches or matches[0].coverage < RELATED) and live_search.enabled():
         searched_live = True
-        if live_search.search_and_ingest(claim, primary=True):
+        if live_search.search_and_ingest(claim):
             matches = _matches(claim, named)
     llm = registry.llm()
     judge = (lambda items: judge_entailment(llm, items)) if llm else None
