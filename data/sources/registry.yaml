@@ -99,6 +99,36 @@ sources:
       جُلبت عبر الواجهة البرمجية العامة للموقع، وحُفظت بنصّها الحرفي مع رابط صفحة كل حديث. ويجب التحقق من شروط
       إعادة الاستخدام مع الناشر قبل أي إطلاق عام.
 
+  # Reference source (priority 3): the meaning of the Qur'an. Not pre-indexed — live search finds the verse's page
+  # when the index cannot answer, and the API gives its text verbatim.
+  - slug: tafsir-muyassar
+    name_ar: التفسير الميسر — مجمع الملك فهد لطباعة المصحف الشريف
+    name_en: Al-Tafsir al-Muyassar — King Fahd Glorious Qur'an Printing Complex
+    publisher_ar: مجمع الملك فهد لطباعة المصحف الشريف — وزارة الشؤون الإسلامية والدعوة والإرشاد بالمملكة العربية السعودية
+    publisher_en: King Fahd Glorious Qur'an Printing Complex — Ministry of Islamic Affairs, Saudi Arabia
+    description_ar: تفسير ميسّر لآيات القرآن الكريم كلها، أعدّته نخبة من العلماء بإشراف مجمع الملك فهد، ومعه نص الآية برسم المصحف من موسوعة القرآن الكريم (quranenc.com). يُبحث فيه مباشرة عند الحاجة.
+    description_en: A concise tafsir of every verse of the Qur'an, prepared by scholars under the King Fahd Complex, with the verse in the Mushaf script, from the Qur'an encyclopedia (quranenc.com). Searched live when needed.
+    base_url: https://quranenc.com/ar/browse/arabic_moyassar
+    domains: [quranenc.com]
+    priority: 3
+    status: approved
+    approval_basis: >-
+      Published by the King Fahd Glorious Qur'an Printing Complex, the Saudi government body for the Mushaf and its
+      tafsir and translations. Approved by the project owner on 2026-10-06 as a reference source. Awaiting formal
+      sign-off from the sharia-governance lead.
+    approval_basis_ar: >-
+      من إصدار مجمع الملك فهد لطباعة المصحف الشريف، الجهة الحكومية السعودية المعنية بالمصحف وتفسيره وترجمة معانيه.
+      اعتمده صاحب المشروع مصدرًا مرجعيًا في ٦ أكتوبر ٢٠٢٦م، وهو بانتظار الاعتماد الرسمي من مسؤول الحوكمة الشرعية.
+    reviewed_by: null
+    reviewed_at: null
+    ingestion: live_search
+    license_note: >-
+      Verses are fetched on demand through the public QuranEnc API and stored verbatim with a link to the verse's page. Reuse terms must
+      be confirmed with the publisher before any public launch.
+    license_note_ar: >-
+      تُجلب الآية عند الحاجة عبر الواجهة البرمجية العامة لموسوعة القرآن الكريم، وتُحفظ بنصّها الحرفي مع رابط صفحتها. ويجب التحقق
+      من شروط إعادة الاستخدام مع الناشر قبل أي إطلاق عام.
+
   - slug: alifta
     name_ar: الرئاسة العامة للبحوث العلمية والإفتاء
     name_en: General Presidency of Scholarly Research and Ifta

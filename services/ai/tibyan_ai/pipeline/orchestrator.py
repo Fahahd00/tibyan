@@ -255,7 +255,7 @@ def ask(
     skip_clarification: bool = False,
     persist_result: bool = True,
 ) -> PipelineResult:
-    """The pipeline, plus live search on the websites of Ibn Baz and Ibn Uthaymeen when the index cannot answer."""
+    """The pipeline, plus live search on the approved websites when the index cannot answer."""
     once = partial(
         _ask_once,
         text=text,

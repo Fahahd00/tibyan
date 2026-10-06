@@ -21,6 +21,7 @@ log = logging.getLogger(__name__)
 
 API = "https://hadeethenc.com/api/v1"
 PAGE_URL = "https://hadeethenc.com/ar/browse/hadith/{id}"
+ONE_URL = API + "/hadeeths/one/?language=ar&id={id}"
 FETCHER_ID = "hadeethenc-api/1"
 PER_PAGE = 100
 
@@ -65,6 +66,12 @@ def snapshot(item: dict, collection: str | None) -> FatwaSnapshot:
         content_sha256=content_hash("", answer),
         fetcher=FETCHER_ID,
     )
+
+
+def parse_api(text: str, _url: str, _id: str) -> FatwaSnapshot | None:
+    """One hadith from the API (live search): the same snapshot as the pre-indexed ones."""
+    item = json.loads(text) or {}
+    return snapshot(item, None) if item.get("hadeeth") else None
 
 
 class HadeethencFetcher:

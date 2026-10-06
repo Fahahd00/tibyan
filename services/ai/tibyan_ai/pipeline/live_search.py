@@ -1,4 +1,5 @@
-"""Live search: when the index cannot answer, look for the fatwa on the websites of Ibn Baz and Ibn Uthaymeen.
+"""Live search: when the index cannot answer, look for the answer on the approved websites themselves —
+Ibn Baz, Ibn Uthaymeen, the hadith encyclopedia and the tafsir of the King Fahd Complex.
 
 OpenAI web search, restricted to the domains of the approved sources, only PROPOSES pages. Each page is then
 fetched and parsed by Tibyan's own site parser — verbatim, with URL, fetch time and content hash — and indexed like
@@ -20,7 +21,7 @@ import httpx
 
 from ..config import get_settings
 from ..db import connection
-from ..ingestion import binbaz, binothaimeen
+from ..ingestion import binbaz, binothaimeen, hadeethenc, quranenc
 from ..ingestion.binbaz import USER_AGENT, FatwaSnapshot
 from ..ingestion.seed import load_registry, upsert_snapshot
 from ..providers import registry, usage
@@ -28,16 +29,18 @@ from ..providers.base import ProviderError, openai_base_url
 
 log = logging.getLogger(__name__)
 
-SEARCH_INSTRUCTIONS = """You find fatwa pages for Tibyan on a fixed list of official websites.
-Search those websites for fatwas whose question matches the user's question (it may be colloquial Arabic).
-Prefer individual fatwa pages (one question and its answer) over category pages, articles or search pages.
-Reply with only the URLs of the most relevant fatwa pages, one per line, best first. Do not answer the question."""
+SEARCH_INSTRUCTIONS = """You find pages for Tibyan on a fixed list of approved websites: scholars' fatwas, an
+encyclopedia of explained hadiths, and a tafsir of the Qur'an verse by verse.
+Search those websites for the pages that answer the user's question (it may be colloquial Arabic): a fatwa on the same
+question, a hadith on the matter, or the tafsir of the verse concerned.
+Prefer individual pages (one fatwa, one hadith or one verse) over category pages, articles or search pages.
+Reply with only the URLs of the most relevant pages, one per line, best first. Do not answer the question."""
 
 
 @dataclass(frozen=True)
 class Site:
     slug: str
-    page: re.Pattern[str]  # a fatwa page URL; group 1 is the site's fatwa id
+    page: re.Pattern[str]  # a page URL; group 1 is the site's id for it
     fetch_url: Callable[[str, str], str]  # (found url, id) → the URL actually fetched and cited
     parse: Callable[[str, str, str], FatwaSnapshot | None]
 
@@ -58,6 +61,18 @@ SITES = [
         re.compile(r"^https?://(?:old\.|www\.)?binothaimeen\.net/content/(\d+)"),
         lambda _url, fatwa_id: f"{binothaimeen.BASE_URL}/content/{fatwa_id}",
         binothaimeen.parse_fatwa_page,
+    ),
+    Site(  # the page is found on the website, its text is read from the public API
+        "hadeethenc",
+        re.compile(r"^https?://(?:www\.)?hadeethenc\.com/[a-z]{2}/browse/hadith/(\d+)"),
+        lambda _url, hadith_id: hadeethenc.ONE_URL.format(id=hadith_id),
+        hadeethenc.parse_api,
+    ),
+    Site(  # any translation's page of a verse → that verse in التفسير الميسر
+        quranenc.SLUG,
+        re.compile(r"^https?://(?:www\.)?quranenc\.com/[a-z]{2}/browse/[a-z_]+/(\d+[/#]\d+)"),
+        lambda _url, ref: quranenc.api_url(ref),
+        quranenc.parse_api,
     ),
 ]
 _BY_SLUG = {site.slug: site for site in SITES}
@@ -223,7 +238,7 @@ def trace_stage(t0: float, added: list[dict]) -> dict:
         "key": "live_search",
         "status": "ok" if added else "skipped",
         "duration_ms": round((time.perf_counter() - t0) * 1000, 1),
-        "summary_ar": f"بحث مباشر في مواقع ابن باز وابن عثيمين: أُضيفت {len(added)} فتوى إلى الفهرس",
-        "summary_en": f"Live search on the websites of Ibn Baz and Ibn Uthaymeen: {len(added)} fatwa(s) added to the index",
+        "summary_ar": f"بحث مباشر في مواقع المصادر المعتمدة — النصوص المضافة إلى الفهرس: {len(added)}",
+        "summary_en": f"Live search on the approved websites: {len(added)} text(s) added to the index",
         "output": {"pages": added},
     }

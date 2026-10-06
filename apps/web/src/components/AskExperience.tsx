@@ -53,10 +53,15 @@ export function AskExperience({
     return () => window.removeEventListener("keydown", onKey);
   }, [focus]);
 
-  const reveal = () =>
-    requestAnimationFrame(() =>
-      resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
-    );
+  // Scroll only once React has rendered the change: the refs then point at the new answer / question,
+  // not at the previous one (scrolling right after setState landed on the earlier answer).
+  const latestId = answer?.answer_id;
+  useEffect(() => {
+    if (latestId) resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [latestId]);
+  useEffect(() => {
+    if (pending) pendingRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [pending]);
 
   const submit = useCallback(
     async (question: string, channel: "text" | "voice") => {
@@ -68,13 +73,9 @@ export function AskExperience({
       setLastChannel(channel);
       setPending(q);
       setText("");
-      requestAnimationFrame(() =>
-        pendingRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }),
-      );
       try {
         const reply = await api.ask(q, locale, channel);
         setThread((t) => [...t, reply]);
-        reveal();
       } catch {
         setError(dict.ask.error);
         setText(q); // given back, to try again
@@ -94,7 +95,6 @@ export function AskExperience({
       try {
         const reply = await api.clarify(answer.question_id, body);
         setThread((t) => [...t.slice(0, -1), reply]);
-        reveal();
       } catch {
         setError(dict.ask.error);
       } finally {
@@ -364,7 +364,6 @@ export function AskExperience({
             if (last) {
               setLastChannel("text"); // already read aloud in the conversation
               setThread((t) => [...t, last]);
-              reveal();
             }
           }}
         />
