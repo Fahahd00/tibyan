@@ -12,6 +12,7 @@ import logging
 import time
 import uuid
 from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from functools import partial
@@ -242,6 +243,12 @@ def _llm_classify(text: str) -> dict | None:
         return None
 
 
+def _timed_retrieve(q_text: str, slugs: list[str] | None) -> tuple[RetrievalResult, float]:
+    t = time.perf_counter()
+    r = retrieve(q_text, registry.embedder(), registry.reranker(), slugs)
+    return r, (time.perf_counter() - t) * 1000
+
+
 _LIVE_SEARCH_REASONS = {"no_source", "weak_evidence", "verification_failed"}
 
 
@@ -385,6 +392,13 @@ def _ask_once(
         else None
     )
     t_cls = time.perf_counter()
+    early = None
+    if llm_cls_skipped is None:
+        # Retrieval does not depend on the classification, so it runs while the LLM classifies (one round trip
+        # saved). Its result is used only if the question goes on to step 7.
+        pool = ThreadPoolExecutor(max_workers=1)
+        early = pool.submit(_timed_retrieve, q_text, slugs)
+        pool.shutdown(wait=False)
     llm_cls = _llm_classify(q_text) if llm_cls_skipped is None else None
     classify_ms = (time.perf_counter() - t_cls) * 1000
     if llm_cls and not llm_cls["is_religious_question"] and intent.intent != "fiqh_question":
@@ -520,7 +534,8 @@ def _ask_once(
     # 7. Retrieval (+ rerank)
     t0 = time.perf_counter()
     try:
-        r = retrieve(q_text, registry.embedder(), registry.reranker(), slugs)
+        r, retrieval_ms = early.result() if early else _timed_retrieve(q_text, slugs)
+        t0 = time.perf_counter() - retrieval_ms / 1000  # the trace shows retrieval's own duration
     except Exception as exc:
         log.exception("retrieval failed")
         trace.add("retrieval", t0, "تعذّر البحث", "Retrieval failed", {"error": str(exc)}, status="failed")
