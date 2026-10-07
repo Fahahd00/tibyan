@@ -25,7 +25,7 @@ export interface AppDeps {
   version?: string;
 }
 
-export function createApp({ config, db, ai, logger, version = "0.1.0" }: AppDeps): express.Express {
+export function createApp({ config, db, ai, logger, version = "1.1.0" }: AppDeps): express.Express {
   const app = express();
   app.disable("x-powered-by");
   // One trusted hop: the Next.js same-origin proxy (or a load balancer) in front of the API.

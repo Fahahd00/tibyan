@@ -32,7 +32,7 @@ async def lifespan(app: FastAPI):
     close_pool()
 
 
-app = FastAPI(title="Tibyan AI service", version="0.1.0", lifespan=lifespan, docs_url="/docs")
+app = FastAPI(title="Tibyan AI service", version="1.1.0", lifespan=lifespan, docs_url="/docs")
 
 
 @app.middleware("http")

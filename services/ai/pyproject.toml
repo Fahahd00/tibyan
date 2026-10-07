@@ -1,6 +1,6 @@
 [project]
 name = "tibyan-ai"
-version = "0.1.0"
+version = "1.1.0"
 description = "Tibyan AI service: question pipeline, hybrid RAG, citation verification, safety gate"
 requires-python = ">=3.11"
 dependencies = [

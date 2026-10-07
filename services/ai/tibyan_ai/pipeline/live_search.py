@@ -32,7 +32,8 @@ log = logging.getLogger(__name__)
 SEARCH_INSTRUCTIONS = """You find pages for Tibyan on a fixed list of approved websites: scholars' fatwas, an
 encyclopedia of explained hadiths, and a tafsir of the Qur'an verse by verse.
 Search those websites for the pages that answer the user's question (it may be colloquial Arabic): a fatwa on the same
-question, a hadith on the matter, or the tafsir of the verse concerned.
+question, a hadith on the matter, or the tafsir of the verse concerned. When the input has two lines, the first is the
+question in fiqh terms and the second is the asker's own words: search mainly with the first, and with both.
 Prefer individual pages (one fatwa, one hadith or one verse) over category pages, articles or search pages.
 When the question quotes or names verses, give the page of each of those verses (one URL per verse): https://quranenc.com/ar/browse/arabic_moyassar/<sura number>/<verse number>.
 Reply with only the URLs of the most relevant pages, one per line, best first. Do not answer the question."""

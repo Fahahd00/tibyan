@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
+import pkg from "../../package.json";
 import { StarMark } from "./Ornament";
 
 export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -36,7 +37,12 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
               {dict.nav.admin}
             </Link>
           </div>
-          <span>{dict.footer.team}</span>
+          <span>
+            {dict.footer.team} ·{" "}
+            <span dir="ltr" className="tabular-nums">
+              v{pkg.version}
+            </span>
+          </span>
         </div>
       </div>
     </footer>
